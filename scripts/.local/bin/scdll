@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /mnt/r/music/pichu/ && scdl -l https://soundcloud.com/ogpichu/tracks -tc
+cd /mnt/r/music/mental/ && scdl -l https://soundcloud.com/mental/tracks -tc
+cd /mnt/r/music/blxty/ && scdl -l https://soundcloud.com/blxty/tracks -tc
+cd /mnt/r/music/emorave/ && scdl -l https://soundcloud.com/2emo/tracks -tc
+cd /mnt/r/music/emorave/ && scdl -l https://soundcloud.com/emorave/tracks -tc
+cd /mnt/r/music/FUJII/ && scdl -l https://soundcloud.com/realfujii/tracks -tc
+

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Get battery status
+status=$(cat /sys/class/power_supply/BAT0/status)
+
+# Get battery percentage
+percentage=$(cat /sys/class/power_supply/BAT0/capacity)
+
+# Emoji selection based on battery status and percentage
+if [ "$status" == "Charging" ]; then
+        emoji="<span font='FontAwesome' size='large'></span>"
+
+elif [ "$status" == "Discharging" ]; then
+    if [ "$percentage" -ge 90 ]; then
+        emoji="<span font='FontAwesome' size='large'></span>"
+    elif [ "$percentage" -ge 70 ]; then
+        emoji="<span font='FontAwesome' size='large'></span>"
+    elif [ "$percentage" -ge 30 ]; then
+        emoji="<span font='FontAwesome' size='large'></span>"
+    elif [ "$percentage" -ge 10 ]; then
+        emoji="<span font='FontAwesome' size='large'></span>"
+    else
+        emoji="<span font='FontAwesome' size='large'></span>"
+    fi
+else
+    emoji="<span font='FontAwesome' size='large'></span>"
+fi
+
+# Output the result
+echo "$emoji&#8239;$percentage%"

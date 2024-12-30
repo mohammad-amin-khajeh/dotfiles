@@ -1,0 +1,15 @@
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = Mohammad amin Khajeh koolaki
+	email = mmdamin_khajehkoolaki256@protonmail.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[color]
+	ui = auto

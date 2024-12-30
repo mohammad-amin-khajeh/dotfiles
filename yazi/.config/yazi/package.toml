@@ -1,0 +1,13 @@
+[plugin]
+deps = [
+  { use = "dedukun/relative-motions", rev = "df97039" },
+  { use = "sonico98/exifaudio", rev = "d794614" },
+  { use = "yazi-rs/plugins:mime-ext", rev = "7afba3a" },
+  { use = "yazi-rs/plugins:smart-enter", rev = "7afba3a" },
+  { use = "ndtoan96/ouch", rev = "b869886" },
+  { use = "yazi-rs/plugins:chmod", rev = "71c4fc2" },
+  { use = "yazi-rs/plugins:git", rev = "71c4fc2" },
+]
+
+[flavor]
+deps = []

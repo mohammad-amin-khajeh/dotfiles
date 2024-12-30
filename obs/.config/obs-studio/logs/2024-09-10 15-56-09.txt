@@ -1,0 +1,177 @@
+15:56:09.436: Using EGL/X11
+15:56:09.436: CPU Name: 13th Gen Intel(R) Core(TM) i3-1305U
+15:56:09.436: CPU Speed: 3736.027MHz
+15:56:09.436: Physical Cores: 5, Logical Cores: 6
+15:56:09.436: Physical Memory: 7635MB Total, 2221MB Free
+15:56:09.436: Kernel Version: Linux 6.10.8-zen1-1-zen
+15:56:09.436: Distribution: "Arch Linux" Unknown
+15:56:09.436: Desktop Environment:  (dwm)
+15:56:09.436: Session Type: x11
+15:56:09.436: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+15:56:09.438: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+15:56:09.438: Portable mode: false
+15:56:09.486: OBS 30.2.1-1 (linux)
+15:56:09.486: ---------------------------------
+15:56:09.486: ---------------------------------
+15:56:09.486: audio settings reset:
+15:56:09.486: 	samples per sec: 48000
+15:56:09.486: 	speakers:        2
+15:56:09.486: 	max buffering:   960 milliseconds
+15:56:09.486: 	buffering type:  dynamically increasing
+15:56:09.492: ---------------------------------
+15:56:09.492: Initializing OpenGL...
+15:56:09.562: Loading up OpenGL on adapter Intel Mesa Intel(R) Graphics (RPL-U)
+15:56:09.562: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.2.2-arch1.1, shading language 4.60
+15:56:09.679: ---------------------------------
+15:56:09.679: video settings reset:
+15:56:09.679: 	base resolution:   1920x1080
+15:56:09.679: 	output resolution: 1920x1080
+15:56:09.679: 	downscale filter:  Bicubic
+15:56:09.679: 	fps:               60/1
+15:56:09.679: 	format:            NV12
+15:56:09.679: 	YUV mode:          Rec. 709/Partial
+15:56:09.680: NV12 texture support enabled
+15:56:09.680: P010 texture support not available
+15:56:09.691: Audio monitoring device:
+15:56:09.691: 	name: Default
+15:56:09.691: 	id: default
+15:56:09.691: ---------------------------------
+15:56:09.703: Failed to load 'en-US' text for module: 'decklink-captions.so'
+15:56:09.717: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+15:56:09.728: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+15:56:09.728: Failed to initialize module 'decklink.so'
+15:56:09.974: [pipewire] No capture sources available
+15:56:09.999: v4l2loopback not installed, virtual camera not registered
+15:56:10.072: VAAPI: API version 1.22
+15:56:10.073: FFmpeg VAAPI H264 encoding supported
+15:56:10.075: FFmpeg VAAPI AV1 encoding not supported
+15:56:10.076: FFmpeg VAAPI HEVC encoding supported
+15:56:10.262: ---------------------------------
+15:56:10.262:   Loaded Modules:
+15:56:10.262:     text-freetype2.so
+15:56:10.262:     rtmp-services.so
+15:56:10.262:     obs-x264.so
+15:56:10.262:     obs-webrtc.so
+15:56:10.262:     obs-vst.so
+15:56:10.262:     obs-transitions.so
+15:56:10.262:     obs-qsv11.so
+15:56:10.262:     obs-outputs.so
+15:56:10.262:     obs-libfdk.so
+15:56:10.262:     obs-filters.so
+15:56:10.262:     obs-ffmpeg.so
+15:56:10.262:     linux-v4l2.so
+15:56:10.262:     linux-pulseaudio.so
+15:56:10.262:     linux-pipewire.so
+15:56:10.262:     linux-jack.so
+15:56:10.262:     linux-capture.so
+15:56:10.262:     linux-alsa.so
+15:56:10.262:     image-source.so
+15:56:10.262:     frontend-tools.so
+15:56:10.262:     decklink-output-ui.so
+15:56:10.262:     decklink-captions.so
+15:56:10.262: ---------------------------------
+15:56:10.263: ---------------------------------
+15:56:10.263: Available Encoders:
+15:56:10.263:   Video Encoders:
+15:56:10.263: 	- ffmpeg_svt_av1 (SVT-AV1)
+15:56:10.263: 	- ffmpeg_aom_av1 (AOM AV1)
+15:56:10.263: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+15:56:10.263: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+15:56:10.263: 	- obs_qsv11_v2 (QuickSync H.264)
+15:56:10.263: 	- obs_qsv11_hevc (QuickSync HEVC)
+15:56:10.263: 	- obs_x264 (x264)
+15:56:10.263:   Audio Encoders:
+15:56:10.263: 	- ffmpeg_aac (FFmpeg AAC)
+15:56:10.263: 	- ffmpeg_opus (FFmpeg Opus)
+15:56:10.263: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+15:56:10.263: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+15:56:10.263: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+15:56:10.263: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+15:56:10.263: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+15:56:10.263: 	- libfdk_aac (libfdk AAC)
+15:56:10.263: ==== Startup complete ===============================================
+15:56:10.319: All scene data cleared
+15:56:10.319: ------------------------------------------------
+15:56:10.326: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.3) 15.0.0'
+15:56:10.326: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+15:56:10.327: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+15:56:10.327: [Loaded global audio device]: 'Desktop Audio'
+15:56:10.328: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.3) 15.0.0'
+15:56:10.328: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+15:56:10.328: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+15:56:10.330: [Loaded global audio device]: 'Mic/Aux'
+15:56:10.330:     - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+15:56:10.331: xshm-input: Geometry 1920x1080 @ 0,0
+15:56:10.337: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.3) 15.0.0'
+15:56:10.338: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+15:56:10.338: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+15:56:10.341: Switched to scene 'Scene'
+15:56:10.342: ------------------------------------------------
+15:56:10.342: Loaded scenes:
+15:56:10.342: - scene 'Scene':
+15:56:10.342:     - source: 'Screen Capture (XSHM)' (xshm_input)
+15:56:10.342:     - source: 'Audio Output Capture (PulseAudio)' (pulse_output_capture)
+15:56:10.342: ------------------------------------------------
+15:56:10.414: Unhandled client message:  "_NET_WM_NAME"
+15:56:11.194: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+15:56:11.194: 
+15:56:11.258: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+15:56:11.258: 
+15:56:14.304: [rtmp-services plugin] Successfully updated file 'services.json' (version 262)
+15:56:14.304: [rtmp-services plugin] Successfully updated package (version 262)
+15:56:22.502: Starting recording due to hotkey
+15:56:22.503: ---------------------------------
+15:56:22.503: [x264 encoder: 'simple_video_recording'] preset: veryfast
+15:56:22.503: [x264 encoder: 'simple_video_recording'] profile: high
+15:56:22.511: [x264 encoder: 'simple_video_recording'] settings:
+15:56:22.511: 	rate_control: CRF
+15:56:22.511: 	bitrate:      0
+15:56:22.511: 	buffer size:  0
+15:56:22.511: 	crf:          23
+15:56:22.511: 	fps_num:      60
+15:56:22.511: 	fps_den:      1
+15:56:22.511: 	width:        1920
+15:56:22.511: 	height:       1080
+15:56:22.511: 	keyint:       250
+15:56:22.511: 
+15:56:22.553: ---------------------------------
+15:56:22.553: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+15:56:22.553: 
+15:56:22.589: ==== Recording Start ===============================================
+15:56:22.589: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-10 15-56-22.mp4'...
+15:56:54.689: Stopping recording due to hotkey
+15:56:55.135: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-10 15-56-22.mp4' stopped
+15:56:55.135: Output 'simple_file_output': stopping
+15:56:55.135: Output 'simple_file_output': Total frames output: 1929
+15:56:55.135: Output 'simple_file_output': Total drawn frames: 1953
+15:56:55.135: ==== Recording Stop ================================================
+15:57:00.722: Starting recording due to hotkey
+15:57:00.722: ---------------------------------
+15:57:00.722: [x264 encoder: 'simple_video_recording'] preset: veryfast
+15:57:00.722: [x264 encoder: 'simple_video_recording'] profile: high
+15:57:00.722: [x264 encoder: 'simple_video_recording'] settings:
+15:57:00.722: 	rate_control: CRF
+15:57:00.722: 	bitrate:      0
+15:57:00.722: 	buffer size:  0
+15:57:00.722: 	crf:          23
+15:57:00.722: 	fps_num:      60
+15:57:00.722: 	fps_den:      1
+15:57:00.722: 	width:        1920
+15:57:00.722: 	height:       1080
+15:57:00.722: 	keyint:       250
+15:57:00.722: 
+15:57:00.747: ---------------------------------
+15:57:00.747: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+15:57:00.747: 
+15:57:00.750: ==== Recording Start ===============================================
+15:57:00.750: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-10 15-57-00.mp4'...
+15:57:32.729: Stopping recording due to hotkey
+15:57:33.158: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-10 15-57-00.mp4' stopped
+15:57:33.158: Output 'simple_file_output': stopping
+15:57:33.158: Output 'simple_file_output': Total frames output: 1920
+15:57:33.158: Output 'simple_file_output': Total drawn frames: 1945
+15:57:33.159: ==== Recording Stop ================================================
+16:06:37.818: adding 64 milliseconds of audio buffering, total audio buffering is now 106 milliseconds (source: Desktop Audio)
+16:06:37.818: 
+16:09:14.916: adding 192 milliseconds of audio buffering, total audio buffering is now 298 milliseconds (source: Mic/Aux)
+16:09:14.916: 

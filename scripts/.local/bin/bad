@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
+file="${HOME}/batch.txt"
+for url in "$@"
+do line=$(cat -n "$file" | grep http | awk '{print $1}' | tail -n 1)
+  line="$((line+1))"
+	sed -i "$line i $url" "$file" 2> /dev/null
+done

@@ -1,0 +1,284 @@
+20:04:28.094: [Safe Mode] Unclean shutdown detected!
+20:04:36.083: [Safe Mode] User elected to launch normally.
+20:04:36.094: Using EGL/X11
+20:04:36.094: CPU Name: 13th Gen Intel(R) Core(TM) i3-1305U
+20:04:36.095: CPU Speed: 1145.396MHz
+20:04:36.095: Physical Cores: 5, Logical Cores: 6
+20:04:36.095: Physical Memory: 7635MB Total, 2459MB Free
+20:04:36.095: Kernel Version: Linux 6.10.10-zen1-1-zen
+20:04:36.095: Distribution: "Arch Linux" Unknown
+20:04:36.095: Desktop Environment:  (dwm)
+20:04:36.095: Session Type: x11
+20:04:36.096: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+20:04:36.108: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+20:04:36.108: Portable mode: false
+20:04:36.142: OBS 30.2.1-1 (linux)
+20:04:36.142: ---------------------------------
+20:04:36.142: ---------------------------------
+20:04:36.142: audio settings reset:
+20:04:36.142: 	samples per sec: 48000
+20:04:36.142: 	speakers:        2
+20:04:36.142: 	max buffering:   960 milliseconds
+20:04:36.142: 	buffering type:  dynamically increasing
+20:04:36.151: ---------------------------------
+20:04:36.151: Initializing OpenGL...
+20:04:36.218: Loading up OpenGL on adapter Intel Mesa Intel(R) Graphics (RPL-U)
+20:04:36.218: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.2.3-arch1.1, shading language 4.60
+20:04:36.326: ---------------------------------
+20:04:36.326: video settings reset:
+20:04:36.326: 	base resolution:   1920x1080
+20:04:36.326: 	output resolution: 1920x1080
+20:04:36.326: 	downscale filter:  Bicubic
+20:04:36.326: 	fps:               60/1
+20:04:36.326: 	format:            NV12
+20:04:36.326: 	YUV mode:          Rec. 709/Partial
+20:04:36.327: NV12 texture support enabled
+20:04:36.327: P010 texture support not available
+20:04:36.335: Audio monitoring device:
+20:04:36.335: 	name: Default
+20:04:36.335: 	id: default
+20:04:36.335: ---------------------------------
+20:04:36.346: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:04:36.355: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+20:04:36.364: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:04:36.364: Failed to initialize module 'decklink.so'
+20:04:36.507: [pipewire] No capture sources available
+20:04:36.534: v4l2loopback not installed, virtual camera not registered
+20:04:36.597: VAAPI: API version 1.22
+20:04:36.597: FFmpeg VAAPI H264 encoding supported
+20:04:36.599: FFmpeg VAAPI AV1 encoding not supported
+20:04:36.600: FFmpeg VAAPI HEVC encoding supported
+20:04:36.751: ---------------------------------
+20:04:36.751:   Loaded Modules:
+20:04:36.751:     text-freetype2.so
+20:04:36.751:     rtmp-services.so
+20:04:36.751:     obs-x264.so
+20:04:36.751:     obs-webrtc.so
+20:04:36.751:     obs-vst.so
+20:04:36.751:     obs-transitions.so
+20:04:36.751:     obs-qsv11.so
+20:04:36.751:     obs-outputs.so
+20:04:36.751:     obs-libfdk.so
+20:04:36.751:     obs-filters.so
+20:04:36.751:     obs-ffmpeg.so
+20:04:36.751:     linux-v4l2.so
+20:04:36.751:     linux-pulseaudio.so
+20:04:36.751:     linux-pipewire.so
+20:04:36.751:     linux-jack.so
+20:04:36.751:     linux-capture.so
+20:04:36.751:     linux-alsa.so
+20:04:36.751:     image-source.so
+20:04:36.751:     frontend-tools.so
+20:04:36.751:     decklink-output-ui.so
+20:04:36.751:     decklink-captions.so
+20:04:36.751: ---------------------------------
+20:04:36.752: ---------------------------------
+20:04:36.752: Available Encoders:
+20:04:36.752:   Video Encoders:
+20:04:36.752: 	- ffmpeg_svt_av1 (SVT-AV1)
+20:04:36.752: 	- ffmpeg_aom_av1 (AOM AV1)
+20:04:36.752: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+20:04:36.752: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+20:04:36.752: 	- obs_qsv11_v2 (QuickSync H.264)
+20:04:36.752: 	- obs_qsv11_hevc (QuickSync HEVC)
+20:04:36.752: 	- obs_x264 (x264)
+20:04:36.752:   Audio Encoders:
+20:04:36.752: 	- ffmpeg_aac (FFmpeg AAC)
+20:04:36.752: 	- ffmpeg_opus (FFmpeg Opus)
+20:04:36.752: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+20:04:36.752: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+20:04:36.752: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+20:04:36.752: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+20:04:36.752: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+20:04:36.752: 	- libfdk_aac (libfdk AAC)
+20:04:36.752: ==== Startup complete ===============================================
+20:04:36.804: All scene data cleared
+20:04:36.805: ------------------------------------------------
+20:04:36.817: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.4) 15.0.0'
+20:04:36.818: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:04:36.818: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+20:04:36.818: [Loaded global audio device]: 'Desktop Audio'
+20:04:36.818: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.4) 15.0.0'
+20:04:36.818: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:04:36.818: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+20:04:36.824: [Loaded global audio device]: 'Mic/Aux'
+20:04:36.824:     - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+20:04:36.825: xshm-input: Geometry 1920x1080 @ 0,0
+20:04:36.832: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.4) 15.0.0'
+20:04:36.832: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:04:36.833: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+20:04:36.835: Switched to scene 'Scene'
+20:04:36.835: ------------------------------------------------
+20:04:36.835: Loaded scenes:
+20:04:36.835: - scene 'Scene':
+20:04:36.835:     - source: 'Screen Capture (XSHM)' (xshm_input)
+20:04:36.835:     - source: 'Audio Output Capture (PulseAudio)' (pulse_output_capture)
+20:04:36.835: ------------------------------------------------
+20:04:36.897: Unhandled client message:  "_NET_WM_NAME"
+20:04:37.444: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+20:04:37.444: 
+20:04:37.530: adding 42 milliseconds of audio buffering, total audio buffering is now 64 milliseconds (source: Mic/Aux)
+20:04:37.530: 
+20:04:39.516: [rtmp-services plugin] Successfully updated file 'services.json' (version 263)
+20:04:39.516: [rtmp-services plugin] Successfully updated package (version 263)
+20:06:21.363: Starting recording due to hotkey
+20:06:21.363: ---------------------------------
+20:06:21.363: [x264 encoder: 'simple_video_recording'] preset: veryfast
+20:06:21.363: [x264 encoder: 'simple_video_recording'] profile: high
+20:06:21.374: [x264 encoder: 'simple_video_recording'] settings:
+20:06:21.374: 	rate_control: CRF
+20:06:21.374: 	bitrate:      0
+20:06:21.374: 	buffer size:  0
+20:06:21.374: 	crf:          23
+20:06:21.374: 	fps_num:      60
+20:06:21.374: 	fps_den:      1
+20:06:21.374: 	width:        1920
+20:06:21.374: 	height:       1080
+20:06:21.374: 	keyint:       250
+20:06:21.374: 
+20:06:21.427: ---------------------------------
+20:06:21.427: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+20:06:21.427: 
+20:06:21.448: ==== Recording Start ===============================================
+20:06:21.448: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-06-21.mp4'...
+20:06:36.146: Stopping recording due to hotkey
+20:06:36.601: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-06-21.mp4' stopped
+20:06:36.601: Output 'simple_file_output': stopping
+20:06:36.601: Output 'simple_file_output': Total frames output: 885
+20:06:36.601: Output 'simple_file_output': Total drawn frames: 909
+20:06:36.602: ==== Recording Stop ================================================
+20:06:43.504: Starting recording due to hotkey
+20:06:43.505: ---------------------------------
+20:06:43.505: [x264 encoder: 'simple_video_recording'] preset: veryfast
+20:06:43.505: [x264 encoder: 'simple_video_recording'] profile: high
+20:06:43.505: [x264 encoder: 'simple_video_recording'] settings:
+20:06:43.505: 	rate_control: CRF
+20:06:43.505: 	bitrate:      0
+20:06:43.505: 	buffer size:  0
+20:06:43.505: 	crf:          23
+20:06:43.505: 	fps_num:      60
+20:06:43.505: 	fps_den:      1
+20:06:43.505: 	width:        1920
+20:06:43.505: 	height:       1080
+20:06:43.505: 	keyint:       250
+20:06:43.505: 
+20:06:43.531: ---------------------------------
+20:06:43.531: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+20:06:43.531: 
+20:06:43.535: ==== Recording Start ===============================================
+20:06:43.536: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-06-43.mp4'...
+20:06:52.227: Stopping recording due to hotkey
+20:06:52.651: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-06-43.mp4' stopped
+20:06:52.652: Output 'simple_file_output': stopping
+20:06:52.652: Output 'simple_file_output': Total frames output: 523
+20:06:52.652: Output 'simple_file_output': Total drawn frames: 546 (547 attempted)
+20:06:52.652: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 1 (0.2%)
+20:06:52.652: ==== Recording Stop ================================================
+20:10:34.034: Starting recording due to hotkey
+20:10:34.035: ---------------------------------
+20:10:34.035: [x264 encoder: 'simple_video_recording'] preset: veryfast
+20:10:34.035: [x264 encoder: 'simple_video_recording'] profile: high
+20:10:34.035: [x264 encoder: 'simple_video_recording'] settings:
+20:10:34.035: 	rate_control: CRF
+20:10:34.035: 	bitrate:      0
+20:10:34.035: 	buffer size:  0
+20:10:34.035: 	crf:          23
+20:10:34.035: 	fps_num:      60
+20:10:34.035: 	fps_den:      1
+20:10:34.035: 	width:        1920
+20:10:34.035: 	height:       1080
+20:10:34.035: 	keyint:       250
+20:10:34.035: 
+20:10:34.055: ---------------------------------
+20:10:34.055: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+20:10:34.055: 
+20:10:34.066: ==== Recording Start ===============================================
+20:10:34.066: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-10-34.mp4'...
+20:12:11.456: Stopping recording due to hotkey
+20:12:11.885: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-10-34.mp4' stopped
+20:12:11.885: Output 'simple_file_output': stopping
+20:12:11.885: Output 'simple_file_output': Total frames output: 5845
+20:12:11.885: Output 'simple_file_output': Total drawn frames: 5870
+20:12:11.886: ==== Recording Stop ================================================
+20:13:18.514: Starting recording due to hotkey
+20:13:18.515: ---------------------------------
+20:13:18.515: [x264 encoder: 'simple_video_recording'] preset: veryfast
+20:13:18.515: [x264 encoder: 'simple_video_recording'] profile: high
+20:13:18.515: [x264 encoder: 'simple_video_recording'] settings:
+20:13:18.515: 	rate_control: CRF
+20:13:18.515: 	bitrate:      0
+20:13:18.515: 	buffer size:  0
+20:13:18.515: 	crf:          23
+20:13:18.515: 	fps_num:      60
+20:13:18.515: 	fps_den:      1
+20:13:18.515: 	width:        1920
+20:13:18.515: 	height:       1080
+20:13:18.515: 	keyint:       250
+20:13:18.515: 
+20:13:18.530: ---------------------------------
+20:13:18.530: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+20:13:18.530: 
+20:13:18.536: ==== Recording Start ===============================================
+20:13:18.536: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-13-18.mp4'...
+20:16:30.683: Stopping recording due to hotkey
+20:16:31.115: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-13-18.mp4' stopped
+20:16:31.115: Output 'simple_file_output': stopping
+20:16:31.115: Output 'simple_file_output': Total frames output: 11530
+20:16:31.115: Output 'simple_file_output': Total drawn frames: 11548 (11554 attempted)
+20:16:31.115: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 6 (0.1%)
+20:16:31.116: ==== Recording Stop ================================================
+20:17:07.662: Starting recording due to hotkey
+20:17:07.662: ---------------------------------
+20:17:07.662: [x264 encoder: 'simple_video_recording'] preset: veryfast
+20:17:07.662: [x264 encoder: 'simple_video_recording'] profile: high
+20:17:07.662: [x264 encoder: 'simple_video_recording'] settings:
+20:17:07.662: 	rate_control: CRF
+20:17:07.662: 	bitrate:      0
+20:17:07.662: 	buffer size:  0
+20:17:07.662: 	crf:          23
+20:17:07.662: 	fps_num:      60
+20:17:07.662: 	fps_den:      1
+20:17:07.662: 	width:        1920
+20:17:07.662: 	height:       1080
+20:17:07.662: 	keyint:       250
+20:17:07.662: 
+20:17:07.673: ---------------------------------
+20:17:07.674: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+20:17:07.674: 
+20:17:07.691: ==== Recording Start ===============================================
+20:17:07.691: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-17-07.mp4'...
+20:20:46.172: Stopping recording due to hotkey
+20:20:46.627: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-17-07.mp4' stopped
+20:20:46.627: Output 'simple_file_output': stopping
+20:20:46.627: Output 'simple_file_output': Total frames output: 13112
+20:20:46.627: Output 'simple_file_output': Total drawn frames: 13120 (13137 attempted)
+20:20:46.628: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 17 (0.1%)
+20:20:46.628: ==== Recording Stop ================================================
+20:22:55.133: Starting recording due to hotkey
+20:22:55.134: ---------------------------------
+20:22:55.134: [x264 encoder: 'simple_video_recording'] preset: veryfast
+20:22:55.134: [x264 encoder: 'simple_video_recording'] profile: high
+20:22:55.134: [x264 encoder: 'simple_video_recording'] settings:
+20:22:55.134: 	rate_control: CRF
+20:22:55.134: 	bitrate:      0
+20:22:55.134: 	buffer size:  0
+20:22:55.134: 	crf:          23
+20:22:55.134: 	fps_num:      60
+20:22:55.134: 	fps_den:      1
+20:22:55.134: 	width:        1920
+20:22:55.134: 	height:       1080
+20:22:55.134: 	keyint:       250
+20:22:55.134: 
+20:22:55.141: ---------------------------------
+20:22:55.142: [FFmpeg libopus encoder: 'simple_opus_recording0'] bitrate: 192, channels: 2, channel_layout: stereo
+20:22:55.142: 
+20:22:55.146: ==== Recording Start ===============================================
+20:22:55.146: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-22-55.mp4'...
+20:25:35.325: Stopping recording due to hotkey
+20:25:35.753: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/mmd/Videos/screencaps/obs 2024-09-22 20-22-55.mp4' stopped
+20:25:35.753: Output 'simple_file_output': stopping
+20:25:35.753: Output 'simple_file_output': Total frames output: 9612
+20:25:35.753: Output 'simple_file_output': Total drawn frames: 9636 (9637 attempted)
+20:25:35.753: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 1 (0.0%)
+20:25:35.754: ==== Recording Stop ================================================
+20:32:45.837: The X11 connection broke (error 1). Did the X11 server die?

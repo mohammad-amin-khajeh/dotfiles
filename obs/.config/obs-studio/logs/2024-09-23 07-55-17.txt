@@ -1,0 +1,317 @@
+07:55:17.918: Using EGL/X11
+07:55:17.918: CPU Name: 13th Gen Intel(R) Core(TM) i3-1305U
+07:55:17.918: CPU Speed: 3799.961MHz
+07:55:17.919: Physical Cores: 5, Logical Cores: 6
+07:55:17.919: Physical Memory: 7635MB Total, 4355MB Free
+07:55:17.919: Kernel Version: Linux 6.10.10-zen1-1-zen
+07:55:17.919: Distribution: "Arch Linux" Unknown
+07:55:17.919: Desktop Environment:  (dwm)
+07:55:17.919: Session Type: x11
+07:55:17.919: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+07:55:17.919: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+07:55:17.919: Portable mode: false
+07:55:17.952: OBS 30.2.1-1 (linux)
+07:55:17.952: ---------------------------------
+07:55:17.953: ---------------------------------
+07:55:17.953: audio settings reset:
+07:55:17.953: 	samples per sec: 44100
+07:55:17.953: 	speakers:        1
+07:55:17.953: 	max buffering:   1044 milliseconds
+07:55:17.953: 	buffering type:  dynamically increasing
+07:55:17.956: ---------------------------------
+07:55:17.956: Initializing OpenGL...
+07:55:18.037: Loading up OpenGL on adapter Intel Mesa Intel(R) Graphics (RPL-U)
+07:55:18.037: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.2.3-arch1.1, shading language 4.60
+07:55:18.064: ---------------------------------
+07:55:18.064: video settings reset:
+07:55:18.064: 	base resolution:   1280x720
+07:55:18.064: 	output resolution: 1280x720
+07:55:18.064: 	downscale filter:  Lanczos
+07:55:18.064: 	fps:               30/1
+07:55:18.064: 	format:            NV12
+07:55:18.064: 	YUV mode:          Rec. 709/Partial
+07:55:18.064: NV12 texture support enabled
+07:55:18.064: P010 texture support not available
+07:55:18.067: Audio monitoring device:
+07:55:18.067: 	name: Default
+07:55:18.067: 	id: default
+07:55:18.068: ---------------------------------
+07:55:18.075: Failed to load 'en-US' text for module: 'decklink-captions.so'
+07:55:18.084: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+07:55:18.091: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+07:55:18.091: Failed to initialize module 'decklink.so'
+07:55:18.223: [pipewire] No capture sources available
+07:55:18.244: v4l2loopback not installed, virtual camera not registered
+07:55:18.308: VAAPI: API version 1.22
+07:55:18.309: FFmpeg VAAPI H264 encoding supported
+07:55:18.310: FFmpeg VAAPI AV1 encoding not supported
+07:55:18.311: FFmpeg VAAPI HEVC encoding supported
+07:55:18.412: ---------------------------------
+07:55:18.412:   Loaded Modules:
+07:55:18.412:     text-freetype2.so
+07:55:18.412:     rtmp-services.so
+07:55:18.412:     obs-x264.so
+07:55:18.412:     obs-webrtc.so
+07:55:18.412:     obs-vst.so
+07:55:18.412:     obs-transitions.so
+07:55:18.412:     obs-qsv11.so
+07:55:18.412:     obs-outputs.so
+07:55:18.412:     obs-libfdk.so
+07:55:18.412:     obs-filters.so
+07:55:18.412:     obs-ffmpeg.so
+07:55:18.412:     linux-v4l2.so
+07:55:18.412:     linux-pulseaudio.so
+07:55:18.412:     linux-pipewire.so
+07:55:18.412:     linux-jack.so
+07:55:18.412:     linux-capture.so
+07:55:18.412:     linux-alsa.so
+07:55:18.412:     image-source.so
+07:55:18.412:     frontend-tools.so
+07:55:18.412:     decklink-output-ui.so
+07:55:18.412:     decklink-captions.so
+07:55:18.412: ---------------------------------
+07:55:18.412: ---------------------------------
+07:55:18.412: Available Encoders:
+07:55:18.412:   Video Encoders:
+07:55:18.412: 	- ffmpeg_svt_av1 (SVT-AV1)
+07:55:18.412: 	- ffmpeg_aom_av1 (AOM AV1)
+07:55:18.412: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+07:55:18.412: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+07:55:18.412: 	- obs_qsv11_v2 (QuickSync H.264)
+07:55:18.412: 	- obs_qsv11_hevc (QuickSync HEVC)
+07:55:18.412: 	- obs_x264 (x264)
+07:55:18.412:   Audio Encoders:
+07:55:18.412: 	- ffmpeg_aac (FFmpeg AAC)
+07:55:18.412: 	- ffmpeg_opus (FFmpeg Opus)
+07:55:18.412: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+07:55:18.412: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+07:55:18.412: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+07:55:18.412: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+07:55:18.412: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+07:55:18.412: 	- libfdk_aac (libfdk AAC)
+07:55:18.412: ==== Startup complete ===============================================
+07:55:18.412: signal_handler_connect: signal 'file_changed' not found
+07:55:18.441: All scene data cleared
+07:55:18.441: ------------------------------------------------
+07:55:18.449: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.4) 15.0.0'
+07:55:18.449: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+07:55:18.449: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+07:55:18.449: [Loaded global audio device]: 'Desktop Audio'
+07:55:18.450: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.4) 15.0.0'
+07:55:18.450: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+07:55:18.451: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+07:55:18.452: [Loaded global audio device]: 'Mic/Aux'
+07:55:18.452:     - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+07:55:18.453: xshm-input: Geometry 1280x720 @ 0,0
+07:55:18.455: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.4) 15.0.0'
+07:55:18.455: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+07:55:18.456: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+07:55:18.458: Switched to scene 'Scene'
+07:55:18.458: ------------------------------------------------
+07:55:18.458: Loaded scenes:
+07:55:18.458: - scene 'Scene':
+07:55:18.458:     - source: 'Screen Capture (XSHM)' (xshm_input)
+07:55:18.458:     - source: 'Audio Output Capture (PulseAudio)' (pulse_output_capture)
+07:55:18.458: ------------------------------------------------
+07:55:18.516: Unhandled client message:  "_NET_WM_NAME"
+07:55:19.021: adding 46 milliseconds of audio buffering, total audio buffering is now 46 milliseconds (source: Desktop Audio)
+07:55:19.021: 
+07:56:22.496: Starting recording due to hotkey
+07:56:22.524: ==== Recording Start ===============================================
+07:56:46.624: Stopping recording due to hotkey
+07:56:46.624: Output 'adv_ffmpeg_output': stopping
+07:56:46.624: Output 'adv_ffmpeg_output': Total frames output: 722
+07:56:46.624: Output 'adv_ffmpeg_output': Total drawn frames: 724
+07:56:46.625: ==== Recording Stop ================================================
+07:57:14.999: Get on org.freedesktop.portal.Settings returned an invalid reply
+07:57:14.999: Get on org.freedesktop.portal.Settings returned an invalid reply
+07:57:15.043:   OpenType support missing for "Open Sans", script 11
+07:57:15.045:   OpenType support missing for "Arial", script 11
+07:57:15.053:   OpenType support missing for "Open Sans", script 12
+07:57:15.055:   OpenType support missing for "Arial", script 12
+07:57:15.055:   OpenType support missing for "Noto Sans", script 12
+07:57:15.056:   OpenType support missing for "Noto Sans CJK JP", script 12
+07:57:15.056:   OpenType support missing for "IPAPGothic", script 12
+07:57:15.058:   OpenType support missing for "Open Sans", script 16
+07:57:15.060:   OpenType support missing for "Arial", script 16
+07:57:15.060:   OpenType support missing for "Noto Sans", script 16
+07:57:15.060:   OpenType support missing for "Noto Sans CJK JP", script 16
+07:57:15.061:   OpenType support missing for "IPAPGothic", script 16
+07:57:15.062:   OpenType support missing for "Open Sans", script 20
+07:57:15.064:   OpenType support missing for "Arial", script 20
+07:57:15.064:   OpenType support missing for "Noto Sans", script 20
+07:57:15.065:   OpenType support missing for "Noto Sans CJK JP", script 20
+07:57:15.065:   OpenType support missing for "IPAPGothic", script 20
+07:58:00.477: signal_handler_connect: signal 'file_changed' not found
+07:58:00.486: Settings changed (outputs)
+07:58:00.486: ------------------------------------------------
+07:58:03.087: Starting recording due to hotkey
+07:58:03.093: ==== Recording Start ===============================================
+07:58:18.939: Stopping recording due to hotkey
+07:58:18.939: Output 'adv_ffmpeg_output': stopping
+07:58:18.939: Output 'adv_ffmpeg_output': Total frames output: 474
+07:58:18.939: Output 'adv_ffmpeg_output': Total drawn frames: 476
+07:58:18.939: ==== Recording Stop ================================================
+07:58:33.187: Get on org.freedesktop.portal.Settings returned an invalid reply
+07:58:33.187: Get on org.freedesktop.portal.Settings returned an invalid reply
+07:59:41.202: xshm-input: Geometry 1280x720 @ 0,0
+08:00:01.917: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:00:01.917: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:04:11.421: signal_handler_connect: signal 'file_changed' not found
+08:04:11.422: Settings changed (outputs)
+08:04:11.422: ------------------------------------------------
+08:04:14.758: Starting recording due to hotkey
+08:04:14.775: ==== Recording Start ===============================================
+08:04:38.134: Stopping recording due to hotkey
+08:04:38.134: Output 'adv_ffmpeg_output': stopping
+08:04:38.134: Output 'adv_ffmpeg_output': Total frames output: 699
+08:04:38.134: Output 'adv_ffmpeg_output': Total drawn frames: 701
+08:04:38.134: ==== Recording Stop ================================================
+08:05:37.081: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:05:37.081: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:07:20.267: signal_handler_connect: signal 'file_changed' not found
+08:07:20.268: Settings changed (outputs)
+08:07:20.268: ------------------------------------------------
+08:07:28.212: Starting recording due to hotkey
+08:07:28.218: ==== Recording Start ===============================================
+08:08:04.151: Stopping recording due to hotkey
+08:08:04.151: Output 'adv_ffmpeg_output': stopping
+08:08:04.151: Output 'adv_ffmpeg_output': Total frames output: 1076
+08:08:04.151: Output 'adv_ffmpeg_output': Total drawn frames: 1078
+08:08:04.151: ==== Recording Stop ================================================
+08:09:43.948: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:09:43.948: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:11:38.534: signal_handler_connect: signal 'file_changed' not found
+08:11:38.534: Settings changed (outputs)
+08:11:38.534: ------------------------------------------------
+08:11:41.320: Starting recording due to hotkey
+08:11:41.338: ==== Recording Start ===============================================
+08:12:39.342: Stopping recording due to hotkey
+08:12:39.342: Output 'adv_ffmpeg_output': stopping
+08:12:39.342: Output 'adv_ffmpeg_output': Total frames output: 1738
+08:12:39.342: Output 'adv_ffmpeg_output': Total drawn frames: 1741
+08:12:39.343: ==== Recording Stop ================================================
+08:13:14.783: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:13:14.783: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:13:52.755: signal_handler_connect: signal 'file_changed' not found
+08:13:52.756: Settings changed (outputs)
+08:13:52.756: ------------------------------------------------
+08:13:57.058: Starting recording due to hotkey
+08:13:57.059: Failed to open video codec: Invalid argument
+08:13:57.059: ffmpeg_data_init failed
+08:13:57.060: ==== Recording Stop ================================================
+08:14:03.664: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:14:03.664: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:14:24.385: signal_handler_connect: signal 'file_changed' not found
+08:14:24.386: Settings changed (outputs)
+08:14:24.386: ------------------------------------------------
+08:14:42.785: Starting recording due to hotkey
+08:14:42.792: ==== Recording Start ===============================================
+08:15:22.131: Stopping recording due to hotkey
+08:15:22.131: Output 'adv_ffmpeg_output': stopping
+08:15:22.131: Output 'adv_ffmpeg_output': Total frames output: 1179
+08:15:22.131: Output 'adv_ffmpeg_output': Total drawn frames: 1180
+08:15:22.131: ==== Recording Stop ================================================
+08:15:44.773: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:15:44.773: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:17:31.060: signal_handler_connect: signal 'file_changed' not found
+08:17:31.060: Settings changed (outputs)
+08:17:31.060: ------------------------------------------------
+08:17:34.575: Starting recording due to hotkey
+08:17:34.579: ==== Recording Start ===============================================
+08:18:00.892: Stopping recording due to hotkey
+08:18:00.892: Output 'adv_ffmpeg_output': stopping
+08:18:00.892: Output 'adv_ffmpeg_output': Total frames output: 788
+08:18:00.892: Output 'adv_ffmpeg_output': Total drawn frames: 789
+08:18:00.892: ==== Recording Stop ================================================
+08:18:26.836: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:18:26.836: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:19:16.994: signal_handler_connect: signal 'file_changed' not found
+08:19:16.994: Settings changed (outputs)
+08:19:16.994: ------------------------------------------------
+08:19:19.416: Starting recording due to hotkey
+08:19:19.423: ==== Recording Start ===============================================
+08:19:28.278: Stopping recording due to hotkey
+08:19:28.278: Output 'adv_ffmpeg_output': stopping
+08:19:28.278: Output 'adv_ffmpeg_output': Total frames output: 264
+08:19:28.278: Output 'adv_ffmpeg_output': Total drawn frames: 266
+08:19:28.278: ==== Recording Stop ================================================
+08:19:34.753: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:19:34.753: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:21:37.843: signal_handler_connect: signal 'file_changed' not found
+08:21:37.852: Settings changed (outputs)
+08:21:37.852: ------------------------------------------------
+08:21:42.023: Starting recording due to hotkey
+08:21:42.027: ==== Recording Start ===============================================
+08:21:54.346: Stopping recording due to hotkey
+08:21:54.346: Output 'adv_ffmpeg_output': stopping
+08:21:54.346: Output 'adv_ffmpeg_output': Total frames output: 368
+08:21:54.346: Output 'adv_ffmpeg_output': Total drawn frames: 370
+08:21:54.346: ==== Recording Stop ================================================
+08:22:22.664: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:22:22.664: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:22:58.808: signal_handler_connect: signal 'file_changed' not found
+08:22:58.808: Settings changed (outputs)
+08:22:58.808: ------------------------------------------------
+08:23:00.886: Starting recording due to hotkey
+08:23:00.891: ==== Recording Start ===============================================
+08:23:04.487: Stopping recording due to hotkey
+08:23:04.487: Output 'adv_ffmpeg_output': stopping
+08:23:04.487: Output 'adv_ffmpeg_output': Total frames output: 107
+08:23:04.487: Output 'adv_ffmpeg_output': Total drawn frames: 108
+08:23:04.488: ==== Recording Stop ================================================
+08:23:56.866: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:23:56.866: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:24:32.975: signal_handler_connect: signal 'file_changed' not found
+08:24:32.976: Settings changed (outputs)
+08:24:32.976: ------------------------------------------------
+08:24:35.081: Starting recording due to hotkey
+08:24:35.087: ==== Recording Start ===============================================
+08:24:54.021: Stopping recording due to hotkey
+08:24:54.021: Output 'adv_ffmpeg_output': stopping
+08:24:54.021: Output 'adv_ffmpeg_output': Total frames output: 566
+08:24:54.021: Output 'adv_ffmpeg_output': Total drawn frames: 568
+08:24:54.021: ==== Recording Stop ================================================
+08:25:39.719: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:25:39.719: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:26:06.905: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:26:06.905: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:27:46.074: signal_handler_connect: signal 'file_changed' not found
+08:27:46.083: Settings changed (outputs)
+08:27:46.083: ------------------------------------------------
+08:27:48.894: Starting recording due to hotkey
+08:27:48.898: ==== Recording Start ===============================================
+08:27:54.618: Stopping recording due to hotkey
+08:27:54.619: Output 'adv_ffmpeg_output': stopping
+08:27:54.619: Output 'adv_ffmpeg_output': Total frames output: 170
+08:27:54.619: Output 'adv_ffmpeg_output': Total drawn frames: 172
+08:27:54.619: ==== Recording Stop ================================================
+08:28:10.160: Switched to Preview/Program mode
+08:28:10.160: ------------------------------------------------
+08:28:11.993: Switched to scene 'Scene'
+08:28:11.995: Switched to regular Preview mode
+08:28:12.001: ------------------------------------------------
+08:28:13.386: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:28:13.386: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:29:18.408: signal_handler_connect: signal 'file_changed' not found
+08:29:18.408: Settings changed (outputs)
+08:29:18.409: ------------------------------------------------
+08:29:20.788: Starting recording due to hotkey
+08:29:20.794: ==== Recording Start ===============================================
+08:29:26.411: Stopping recording due to hotkey
+08:29:26.412: Output 'adv_ffmpeg_output': stopping
+08:29:26.412: Output 'adv_ffmpeg_output': Total frames output: 167
+08:29:26.412: Output 'adv_ffmpeg_output': Total drawn frames: 169
+08:29:26.412: ==== Recording Stop ================================================
+08:29:31.936: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:29:31.936: Get on org.freedesktop.portal.Settings returned an invalid reply
+08:30:09.599: signal_handler_connect: signal 'file_changed' not found
+08:30:09.608: Settings changed (outputs)
+08:30:09.608: ------------------------------------------------
+08:30:11.596: Starting recording due to hotkey
+08:30:11.600: ==== Recording Start ===============================================
+08:30:22.606: Stopping recording due to hotkey
+08:30:22.606: Output 'adv_ffmpeg_output': stopping
+08:30:22.606: Output 'adv_ffmpeg_output': Total frames output: 329
+08:30:22.606: Output 'adv_ffmpeg_output': Total drawn frames: 331
+08:30:22.607: ==== Recording Stop ================================================

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+restore_session() {
+    restore_path="$XDG_CONFIG_HOME/tmux/plugins/tmux-resurrect/scripts"
+    tmux new -s temp_session -d
+    tmux run-shell "$restore_path/restore.sh"
+    tmux kill-session -t temp_session
+    tmux attach -t "$1"
+}
+
+tmux attach -t "$1" 2> /dev/null || restore_session "$1"

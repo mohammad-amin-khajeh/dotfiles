@@ -1,0 +1,16 @@
+# theme
+romkatv/powerlevel10k
+
+# autopair plugin
+hlissner/zsh-autopair kind:defer
+
+
+# better vi mode
+jeffreytse/zsh-vi-mode kind:defer
+
+# popular fish-like plugins
+mattmc3/zfunctions kind:defer
+zdharma-continuum/fast-syntax-highlighting kind:defer
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search kind:defer
+zsh-users/zsh-completions kind:defer kind:fpath path:src

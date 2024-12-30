@@ -1,0 +1,7 @@
+#!/bin/zsh
+file="${HOME}/vocab.txt"
+[ `echo $#` -eq 0 ] && echo "usage: `basename $0` \"any 言葉\""
+for word in "$@"
+do [ -z "$(rg ^$word.$\|^$word$ $file)" ] && \
+	echo "$word" >> "$file" || echo "$word is already in there"
+done

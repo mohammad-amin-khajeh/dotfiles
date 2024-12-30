@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+# shellcheck disable=2162,2035
+
+set -euo pipefail
+shopt -s nullglob
+
+case $(find .) in
+    *[aA][pP][eE]*) file=ape ;;
+    *[fF][lL][aA][cC]*) file=flac ;;
+    *[mM]4[aA]*) file=m4a ;;
+    *) read -p "please enter the file extension: " file ;;
+esac
+
+if [[ "$(find *."$file" | wc -l)" -eq 1 ]]; then
+    if [[ -n "$(grep -im 1 'REM GENRE*' *.cue | sed 's/"//g' | cut -d ' ' -f 1,2 --complement)" ]] &> /dev/null; then
+        grep -im 1 'REM GENRE*' *.cue | sed 's/"//g' | cut -d ' ' -f 1,2 --complement
+    else
+        read -p "please enter the genre: " genre
+    fi
+    read -p "is the above the correct genre? [Y/n]: " answer
+    case "$answer" in
+        [yY] | [yY][eE][sS] | "" )
+            genre=$(grep -im 1 'REM GENRE*' *.cue | sed 's/"//g' | cut -d ' ' -f 1,2 --complement) ;;
+        [nN] | [nN][oO])
+            read -p "please enter the genre: " genre ;;
+        *)
+            echo "please rerun the script and enter y/yes or n/no"
+            exit
+    ;; esac
+
+    case $(find .) in
+        *[aA][pP][eE]*) file=ape ;;
+        *[fF][lL][aA][cC]*) file=flac ;;
+        *[mM]4[aA]*) file=m4a ;;
+        *) read -p "please enter the file extension: " file ;;
+    esac
+
+    if [[ "$(grep -q 'REM DATE' *.cue)" ]]; then
+        DATE=$(grep 'REM DATE' *.cue | awk '{ print $NF }')
+    else
+        read -p "please enter the date: " DATE
+    fi
+
+    curdir="${PWD##*/}"
+    mkdir "$curdir"
+
+    shnsplit -f *.cue -t 'shnsplit %n. %t' -o flac *."$file"
+    mv shnsplit*.flac "$curdir"
+    cp -r *.{jpg,png,jpeg} *.cue "$curdir"
+    cd "$curdir"
+
+    cuetag *.cue *.flac || cuetag.sh *.cue *.flac
+
+    alname=$(grep -oim 1 'TITLE ".*"' *.cue | sed 's/"//g' | cut -d ' ' -f 1 --complement)
+    rm *.cue
+
+    for i in *.flac
+    do ffmpeg -i "$i" -c:a libopus -b:a 160k -metadata genre="$genre" -metadata year="$DATE" "${i%.*}.opus"
+    done
+    rm *.flac
+
+    rename "shnsplit " "" *.opus
+
+    echo "enjoy listening to $alname $USER :D"
+
+elif [[ "$(find *."$file" | wc -l)" -gt 1 ]]; then
+
+    read -p "please enter the genre: " genre
+    curdir="${PWD##*/}"
+    mkdir "$curdir"
+    cp -r *.{jpg,png,jpeg} "$curdir"
+    for i in *."$file"
+    do ffmpeg -i "$i" -c:a libopus -b:a 160k -metadata genre="$genre" "${i%.*}.opus"
+    done
+    mv *.opus "$curdir"
+
+else
+    echo "please run the script in an appropriate folder"
+fi

@@ -1,0 +1,6 @@
+    [[ ! -d "${HOME}/.cache/curl" ]] && mkdir ~/.cache/curl
+    dir="$(uuidgen | cut -d'-' -f1)"
+    mkdir ~/.cache/curl/"$dir"
+    cp "$@" ~/.cache/curl/"$dir"
+    zip -r9 ~/.cache/curl/"$dir".zip ~/.cache/curl/"$dir"
+    curl -F "file=@$HOME/.cache/curl/$dir.zip" 0x0.st

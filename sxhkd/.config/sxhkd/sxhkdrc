@@ -1,0 +1,49 @@
+KP_{Enter,Add}
+   pactl set-sink-volume @DEFAULT_SINK@ {-,+}1% && \
+   kill -44 $(pidof dwmblocks)
+
+XF86Audio{Raise,Lower}Volume
+  pactl set-sink-volume @DEFAULT_SINK@ {+,-}2% && \
+  kill -44 $(pidof dwmblocks)
+
+KP_Subtract
+  playerctl --list-all | tail -n 1 | xargs playerctl play-pause --player
+
+XF86MonBrightness{Down,Up}
+  brightnessctl set {5-%, 5+%}
+
+super + r
+  rofi -show run
+
+super + v
+  copyq menu
+
+# save a screenshot and copy it to the clipboard
+super + alt + c
+  curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
+  file="${HOME}/Pictures/screenshots/${curdate}.png" && \
+  maim "$file" && \
+  echo "file://${file}" | \
+  xclip -sel c -t text/uri-list && \
+  dunstify 📸 "screenshot taken" -t 1200
+
+control + shift + space
+  curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
+  file="${HOME}/Pictures/screenshots/${curdate}.png" && \
+  maim --select "$file" && \
+  echo "file://${file}" | \
+  xclip -sel c -t text/uri-list
+
+
+super + shift + s
+  maim --select | xclip -sel c -t image/png
+
+super + w
+    wifi-rofi
+
+# toggle screenkey
+super + alt + s
+  pgrep screenkey && pkill screenkey || screenkey
+
+super + alt + control + t
+  toggle_tor.sh

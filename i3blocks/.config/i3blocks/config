@@ -1,0 +1,35 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+command=$SCRIPT_DIR
+separator_block_width=15
+
+# [bandwidth]
+# command=$SCRIPT_DIR/bandwidth.sh
+# interval=persist
+# # markup=pango
+# # LABEL=<span font='FontAwesome'>	</span>
+# # UNIT=MB
+# # DT=1
+
+[time]
+command=printf ' '; date '+%Y-%m-%d   %H:%M'
+interval=10
+
+[volume]
+command=$SCRIPT_DIR/volume
+interval=once
+signal=10
+
+[battery]
+command=$SCRIPT_DIR/battery
+markup=pango
+interval=10
+# color=$color5

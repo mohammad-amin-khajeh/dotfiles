@@ -1,0 +1,6 @@
+    curdate=$(date +%Y-%m-%d\ %H-%M-%S)
+    if [ $# -eq 0 ]; then
+      ffmpeg -r 30 -probesize 1000M -f x11grab -thread_queue_size 4000 -i :0.0 -f alsa -ac 1 -thread_queue_size 4000 -i default ~/Videos/screencaps/"$curdate".mp4
+    else
+      ffmpeg -r 30 -probesize 1000M -f x11grab -thread_queue_size 4000 -i :0.0 -f alsa -ac 1 -thread_queue_size 4000 -i default "$1"
+    fi

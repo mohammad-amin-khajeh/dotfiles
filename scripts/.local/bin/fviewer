@@ -1,0 +1,4 @@
+#!/bin/bash
+
+list=$(fc-list | awk '{print $1}' | sed 's/://g' | fzf)
+display "$list"
