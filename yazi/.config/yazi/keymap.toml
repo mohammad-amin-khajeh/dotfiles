@@ -191,6 +191,9 @@ keymap = [
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
 	{ on = "<F1>", run = "help", desc = "Open help" },
+
+  # Go to the root of the current git repo
+	{ on = [ "g", "r" ], run = '''shell 'ya emit cd "$(git rev-parse --show-toplevel)"' ''', desc = "cd git root" },
 ]
 
 # [tasks]
