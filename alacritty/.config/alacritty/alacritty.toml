@@ -1,6 +1,4 @@
-import = [
-	"~/.config/alacritty/themes/themes/onenord.toml",
-]
+general.import = ["~/.config/alacritty/themes/themes/onenord.toml"]
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
