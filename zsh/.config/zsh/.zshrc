@@ -32,6 +32,7 @@ alias \
   c='clear' \
   cat='bat' \
   cp='cp -ivp' \
+  cm='cmus' \
   df='df -h' \
   dl='aria2c' \
   du='du -h' \
