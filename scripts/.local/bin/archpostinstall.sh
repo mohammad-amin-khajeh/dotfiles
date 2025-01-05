@@ -35,8 +35,9 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   imlib2 \
   jq \
   lazygit \
-  libnotify \
   libheif \
+  libnotify \
+  luarocks \
   lxappearance-gtk3 \
   ly \
   mac \
@@ -48,7 +49,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   neovim \
   network-manager-applet \
   npm \
-  obs-studio \
   otf-font-awesome \
   otf-ipafont \
   ouch \
@@ -61,7 +61,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   pnpm \
   qbittorrent \
   redshift \
-  reflector \
   ripgrep \
   rofi \
   rofimoji \
