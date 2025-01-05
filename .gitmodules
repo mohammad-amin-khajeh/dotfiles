@@ -1,0 +1,18 @@
+[submodule "neovim/.config/nvchad"]
+	path = neovim/.config/nvchad
+	url = https://github.com/mohammad-amin-khajeh/nvim
+[submodule "neovim/.config/nvim"]
+	path = neovim/.config/nvim
+	url = https://github.com/mohammad-amin-khajeh/lazyvim
+[submodule "suckless/.local/src/dwm-flexipatch"]
+	path = suckless/.local/src/dwm-flexipatch
+	url = https://github.com/mohammad-amin-khajeh/dwm
+[submodule "suckless/.local/src/st-flexipatch"]
+	path = suckless/.local/src/st-flexipatch
+	url = https://github.com/mohammad-amin-khajeh/st
+[submodule "suckless/.local/src/dwmblocks-async"]
+	path = suckless/.local/src/dwmblocks-async
+	url = https://github.com/mohammad-amin-khajeh/dwmblocks-async
+[submodule "suckless/.local/src/nsxiv"]
+	path = suckless/.local/src/nsxiv
+	url = https://github.com/mohammad-amin-khajeh/nsxiv
