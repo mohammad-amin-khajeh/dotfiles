@@ -47,3 +47,6 @@ super + alt + s
 
 super + alt + control + t
   toggle_tor.sh
+
+super + alt + l
+  slock
