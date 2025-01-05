@@ -19,3 +19,4 @@
 - image viewer: [nsxiv](https://github.com/mohammad-amin-khajeh/nsxiv)
 - notification daemon: [dunst](https://github.com/dunst-project/dunst)
 - screenshot: [maim](https://github.com/naelstrof/maim)
+- screen locker: [slock](https://tools.suckless.org/slock/)
