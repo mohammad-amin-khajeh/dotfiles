@@ -3,7 +3,6 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
-# _v4_suppress_deprecation_warnings = true
 ratio          = [ 1, 3, 3 ]
 sort_by        = "mtime"
 sort_sensitive = false
