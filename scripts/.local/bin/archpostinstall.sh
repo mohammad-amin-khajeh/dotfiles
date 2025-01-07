@@ -59,6 +59,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   picom \
   playerctl \
   pnpm \
+  python-pipx \
   qbittorrent \
   redshift \
   ripgrep \
@@ -121,6 +122,9 @@ aria2c https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.tar.gz
 tar -xzvf yt-dlp.tar.gz yt-dlp/completions/zsh/_yt-dlp
 echo "$pass" | sudo -S mv yt-dlp/completions/zsh/_yt-dlp /usr/share/zsh/site-functions/
 rm -rf yt-dlp yt-dlp.tar.gz
+
+# Install scdl
+pipx insall scdl
 
 # # install phantomjs
 # aria2c 'https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-i686.tar.bz2'
