@@ -9,6 +9,7 @@ keymap = [
 	{ on = [ "g", "a" ],      run = "cd ~/Documents/harddrive/anime/",    desc = "cd ~/Documents/harddrive/anime/" },
 	{ on = [ "g", "b" ],      run = "cd ~/Pictures/screenshots",          desc = "cd ~/Pictures/screenshots" },
 	{ on = [ "g", "c", "d" ], run = "cd ~/Documents/code",                desc = "cd ~/Documents/code" },
+	{ on = [ "g", "c", "c" ], run = "cd ~/Videos/clips",                  desc = "cd ~/Videos/clips" },
 	{ on = [ "g", "c", "b" ], run = "cd ~/Documents/books/",              desc = "cd ~/Documents/books/" },
 	{ on = [ "g", "c", "o" ], run = "cd ~/.config",                       desc = "cd ~/.config" },
 	{ on = [ "g", "c", "p" ], run = "cd ~/Pictures/Code",                 desc = "cd ~/Pictures/Code" },
