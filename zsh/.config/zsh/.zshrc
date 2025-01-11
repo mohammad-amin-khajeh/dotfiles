@@ -107,6 +107,11 @@ unsetopt nomatch
 eval "$(zoxide init zsh)"
 autoload -U compinit && compinit
 
+ # Edit the current command with default editor
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^x" edit-command-line
+
 #binds
 bindkey -v
 export KEYTIMEOUT=1
