@@ -11,8 +11,8 @@ zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins
 # Ensure the .zsh_plugins.txt file exists so you can add plugins.
 [[ -f ${zsh_plugins}.txt ]] || touch ${zsh_plugins}.txt
 
-# Lazy-load antidote from its functions directory.
-fpath=(/path/to/antidote/functions $fpath)
+# Lazy-load antidote from its functions directory(Installed with yay).
+fpath=(/usr/share/zsh-antidote/functions $fpath)
 autoload -Uz antidote
 
 # Generate a new static file whenever .zsh_plugins.txt is updated.
@@ -23,8 +23,8 @@ fi
 # Source your static plugins file.
 source ${zsh_plugins}.zsh
 
-#theme
-[[ -f ~/.config/zsh/.p10k.zsh ]] && source ~/.config/zsh/.p10k.zsh
+# Theme
+[[ -f ${ZDOTDIR}/.p10k.zsh ]] && source ${ZDOTDIR}/.p10k.zsh
 
 #useful aliases
 alias \
