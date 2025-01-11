@@ -42,4 +42,4 @@ case ":$PATH:" in
 esac
 
 # source pywal colors
-[ -f ~/.cache/wal/colors.sh ] && source ~/.cache/wal/colors.sh
+[ -f "$XDG_CACHE_HOME"/wal/colors.sh ] && source "$XDG_CACHE_HOME"/wal/colors.sh
