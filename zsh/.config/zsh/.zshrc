@@ -31,8 +31,8 @@ alias \
   bc='bc -ql' \
   c='clear' \
   cat='bat' \
-  cp='cp -ivp' \
   cm='cmus' \
+  cp='cp -ivp' \
   df='df -h' \
   dl='aria2c' \
   du='du -h' \
@@ -44,13 +44,14 @@ alias \
   ll='eza -l --icons -a --git' \
   ls='eza --icons -a --group-directories-first' \
   mkd='mkdir -pv' \
+  mnt='sudo mount' \
   mpvfs='mpv --player-operation-mode=pseudo-gui' \
   mpyt='mpv --ytdl-format=302+140/298+140/22/302+140/398+140/244+140' \
   mv='mv -iv' \
   n='nvim' \
   nc='$EDITOR ~/Documents/coding_habit.norg' \
-  nr='$EDITOR ~/Documents/reminders.txt' \
   nfetch='fastfetch -c ~/.config/fastfetch/neofetch.jsonc' \
+  nr='$EDITOR ~/Documents/reminders.txt' \
   open='xdg-open' \
   pac='sudo pacman' \
   pacins='sudo pacman -S --needed' \
@@ -67,10 +68,10 @@ alias \
   tmux='tmux -u' \
   tree='eza --tree -a --long --icons' \
   umnt='sudo umount' \
-  mnt='sudo mount' \
   wget="wget --hsts-file=$XDG_DATA_HOME/.wget-hsts" \
   ytcut='yt-dlp -f 135+140/244+140 --force-keyframes-at-cuts --download-sections' \
-  ytdl='yt-dlp'
+  ytdl='yt-dlp' \
+  za='zathura'
 
 # autoload -U promptinit; promptinit
 
