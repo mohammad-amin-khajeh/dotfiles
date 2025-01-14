@@ -9,7 +9,7 @@ else
   wall="$1"
 fi
 xwallpaper --zoom "$wall"
-echo -n "$wall" >~/.cache/wal/wal
+echo -n "$wall" >"$XDG_CACHE_HOME"/wallpaper
 # wal -i "$wall"
 
 Xresources_font_conf="Xft.antialias: 1
