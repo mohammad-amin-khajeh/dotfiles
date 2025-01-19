@@ -195,6 +195,9 @@ keymap = [
 
   # Go to the root of the current git repo
 	{ on = [ "g", "r" ], run = '''shell 'ya emit cd "$(git rev-parse --show-toplevel)"' ''', desc = "cd git root" },
+
+  # Open lazygit
+	{ on = ["g","o"],    run = "plugin lazygit", dsec = "open lazygit"},
 ]
 
 # [tasks]
