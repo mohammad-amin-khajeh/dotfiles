@@ -18,8 +18,8 @@ super + r
 super + v
   copyq menu
 
-# save a screenshot and copy it to the clipboard
-super + alt + c
+# snap the "whole" screen and copy it to clipboard
+super + shift + s; w
   curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
   file="${HOME}/Pictures/screenshots/${curdate}.png" && \
   maim "$file" && \
@@ -27,7 +27,8 @@ super + alt + c
   xclip -sel c -t text/uri-list && \
   dunstify 📸 "screenshot taken" -t 1200
 
-control + shift + space
+# screenshot a "region" and copy it to clipboard
+super + shift + s; r
   curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
   file="${HOME}/Pictures/screenshots/${curdate}.png" && \
   maim --select "$file" && \
@@ -35,7 +36,8 @@ control + shift + space
   xclip -sel c -t text/uri-list
 
 
-super + shift + s
+# "copy" a region to clipboard
+super + shift + s; c
   maim --select | xclip -sel c -t image/png
 
 super + w
@@ -45,8 +47,22 @@ super + w
 super + alt + s
   pgrep screenkey && pkill screenkey || screenkey
 
-super + alt + control + t
-  toggle_tor.sh
-
 super + alt + l
   slock
+
+##########Quality of life scripts##########
+super + ctrl + s; t
+  toggle_tor.sh
+
+super + ctrl + s; r
+  reminder.sh
+
+super + ctrl + s; w
+  wallpaper.sh
+
+super + ctrl + s; o
+  output_switcher.sh
+
+super + ctrl + s; b
+  open_book.sh
+###########################################
