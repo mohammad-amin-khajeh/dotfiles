@@ -90,6 +90,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   wget \
   xclip \
   xcolor \
+  xdg-desktop-portal-termfilechooser-fix-for-lf-git \
   xdotool \
   xorg-xrandr \
   xorg-xrdb \

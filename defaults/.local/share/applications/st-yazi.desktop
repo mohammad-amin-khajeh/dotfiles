@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=st-yazi
+Exec=st -e yazi
+MimeType=inode/directory
+Terminal=false
+Type=Application
+Actions=open;
+
+[Desktop Action open]
+Exec=st -e yazi %F
