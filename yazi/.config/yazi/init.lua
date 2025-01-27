@@ -20,6 +20,7 @@ require("mime-ext"):setup({
 
 	-- Expand the existing extension database (lowercase), for example:
 	with_exts = {
+		dng = "image/jpeg",
 		heif = "image/heif",
 		heic = "image/heic",
 		zst = "application/zstd",
