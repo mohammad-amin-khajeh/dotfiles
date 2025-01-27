@@ -8,6 +8,7 @@ deps = [
   { use = "yazi-rs/plugins:chmod", rev = "71c4fc2" },
   { use = "yazi-rs/plugins:git", rev = "71c4fc2" },
   { use = "Lil-Dank/lazygit", rev = "c82794f" },
+  { use = "boydaihungst/restore", rev = "ffc209e" },
 ]
 
 [flavor]
