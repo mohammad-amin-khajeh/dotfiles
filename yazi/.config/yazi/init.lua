@@ -33,3 +33,6 @@ require("mime-ext"):setup({
 
 -- add git support
 require("git"):setup()
+
+-- folder-specific rules
+require("folder-rules"):setup()
