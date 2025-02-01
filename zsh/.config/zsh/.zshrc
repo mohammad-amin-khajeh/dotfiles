@@ -49,7 +49,7 @@ alias \
   mpyt='mpv --ytdl-format=302+140/298+140/22/302+140/398+140/244+140' \
   mv='mv -iv' \
   n='nvim' \
-  nc='$EDITOR ~/Documents/coding_habit.norg' \
+  nc='$EDITOR ~/Documents/coding_progress.norg' \
   nfetch='fastfetch -c ~/.config/fastfetch/neofetch.jsonc' \
   nr='$EDITOR ~/Documents/reminders.txt' \
   open='xdg-open' \

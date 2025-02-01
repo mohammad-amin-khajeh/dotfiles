@@ -71,4 +71,7 @@ super + ctrl + s; y
   yt-dlp --cookies-from-browser firefox "$(xclip -o -sel c)" && \
   dunstify "downloaded successfully✅" -t 2000 || \
   dunstify "failed to download❌" -t 2000
+
+super + ctrl + s; c
+  st -c termFloat -e nvim ~/Documents/coding_progress.norg
 ###########################################
