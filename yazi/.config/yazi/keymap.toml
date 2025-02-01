@@ -19,6 +19,7 @@ keymap = [
 	{ on = [ "g", "d", "f" ], run = "cd ~/Documents",                     desc = "cd ~/Documents" },
 	{ on = [ "g", "f"],       run = "cd ~/Documents/flash",               desc = "cd ~/Documents/flash" },
 	{ on = [ "g", "e"],       run = "cd ~/Documents/harddrive",           desc = "cd ~/Documents/harddrive" },
+	{ on = [ "g", "k"],       run = "cd ~/Documents/konkour",             desc = "cd ~/Documents/konkour" },
 	{ on = [ "g", "l"],       run = "cd ~/.local",                        desc = "cd ~/.local" },
 	{ on = [ "g", "m"],       run = "cd ~/Music",                         desc = "cd ~/Music" },
 	{ on = [ "g", "p"],       run = "cd ~/Documents/phone",               desc = "cd ~/Documents/phone" },
