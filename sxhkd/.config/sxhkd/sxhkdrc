@@ -72,6 +72,9 @@ super + ctrl + s; y
   dunstify "downloaded successfully✅" -t 2000 || \
   dunstify "failed to download❌" -t 2000
 
-super + ctrl + s; c
+super + ctrl + s; c; p
   st -c termFloat -e nvim ~/Documents/coding_progress.norg
+
+super + ctrl + s; c; c
+  rofi -show calc -modi calc -no-show-match -no-sort
 ###########################################

@@ -64,6 +64,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   redshift \
   ripgrep \
   rofi \
+  rofi-calc \
   rofimoji \
   screenkey \
   shntool \
