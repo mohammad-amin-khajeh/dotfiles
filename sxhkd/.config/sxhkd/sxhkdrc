@@ -66,9 +66,15 @@ super + ctrl + s; o
 super + ctrl + s; b
   open_book.sh
 
-super + ctrl + s; y
+super + ctrl + s; y; v
   dunstify yt-dlp "downloading..." -t 2000; \
   yt-dlp --cookies-from-browser firefox "$(xclip -o -sel c)" && \
+  dunstify "downloaded successfully✅" -t 2000 || \
+  dunstify "failed to download❌" -t 2000
+
+super + ctrl + s; y; m
+  dunstify yt-dlp "downloading..." -t 2000; \
+  yt-dlp --cookies-from-browser firefox -f 140 "$(xclip -o -sel c)" && \
   dunstify "downloaded successfully✅" -t 2000 || \
   dunstify "failed to download❌" -t 2000
 
