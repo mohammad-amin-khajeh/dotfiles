@@ -2,7 +2,7 @@
 
 redshift -x
 redshift -O 2800k &
-xargs --arg-file="$XDG_CACHE_HOME"/wallpaper -d $ xwallpaper --zoom &
+xwallpaper --zoom "$(\find Pictures/wallpapers | shuf -n1)" &
 setxkbmap -model pc104 -layout us,ir -variant ,winkeys -option grp:alt_shift_toggle -option "caps:swapescape" &
 xset r rate 200 32 &
 xset s 180 180 &
