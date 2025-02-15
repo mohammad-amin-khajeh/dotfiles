@@ -10,6 +10,7 @@ set -euo pipefail
 
 read -rp "enter your password: " pass
 yay -Syu --noconfirm --needed --sudoloop --removemake \
+  7zip \
   arc-gtk-theme \
   aria2 \
   awesome-terminal-fonts \
@@ -48,6 +49,8 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   nekoray-bin \
   neovim \
   network-manager-applet \
+  noto-fonts-cjk \
+  noto-fonts-emoji \
   npm \
   otf-font-awesome \
   otf-ipafont \
