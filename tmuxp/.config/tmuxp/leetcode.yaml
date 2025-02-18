@@ -1,0 +1,18 @@
+session_name: code
+windows:
+  - window_name: leetcode
+    layout: main-horizontal
+    start_directory: ~/Documents/code/python/leetcode/
+    panes:
+      -
+
+  - window_name: cmus
+    layout: main-horizontal
+    panes:
+      - cmus
+
+  - window_name: timer
+    layout: main-horizontal
+    focus: True
+    panes:
+      - td

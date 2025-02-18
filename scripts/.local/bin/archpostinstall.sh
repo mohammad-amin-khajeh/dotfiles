@@ -82,6 +82,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   termdown \
   tmux \
   tmux-plugin-manager \
+  tmuxp \
   tor \
   trash-cli \
   ttf-cascadia-code-nerd \
