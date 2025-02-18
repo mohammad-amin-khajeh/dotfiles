@@ -41,5 +41,5 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# source pywal colors
-[ -f "$XDG_CACHE_HOME"/wal/colors.sh ] && source "$XDG_CACHE_HOME"/wal/colors.sh
+# source fzf colors
+source "$XDG_CONFIG_HOME"/fzf/tokyonight_night.sh
