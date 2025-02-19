@@ -40,6 +40,7 @@ dwm.tagsselbordercolor: #ba8baf
 dwm.tagsselfgcolor: #000000
 dwm.titleselbgcolor: #000000
 dwm.titleselfgcolor: #9ece6a
+dwm.titlenormbgcolor: #000000
 
 Xft.antialias: 1
 Xft.autohint: 0
