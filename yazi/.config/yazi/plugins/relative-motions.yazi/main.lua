@@ -1,3 +1,4 @@
+--- @since 25.2.7
 -- stylua: ignore
 local MOTIONS_AND_OP_KEYS = {
 	{ on = "0" }, { on = "1" }, { on = "2" }, { on = "3" }, { on = "4" },
