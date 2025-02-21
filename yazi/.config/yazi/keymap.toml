@@ -199,7 +199,11 @@ keymap = [
 	{ on = [ "g", "r" ], run = '''shell 'ya emit cd "$(git rev-parse --show-toplevel)"' ''', desc = "cd git root" },
 
   # Open lazygit
-	{ on = ["g","o"],    run = "plugin lazygit", dsec = "open lazygit"},
+	{ on = ["g","o"],    run = "plugin lazygit", desc = "open lazygit"},
+
+  # mount/unmount
+	{ on = 'M',          run = "plugin mount",   desc = "open mount menu"},
+
 ]
 
 # [tasks]
