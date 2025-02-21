@@ -91,6 +91,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   ttf-ms-fonts \
   ttf-opensans \
   typescript \
+  udisks2 \
   ueberzugpp \
   unzip \
   wget \
