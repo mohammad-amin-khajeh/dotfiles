@@ -48,5 +48,10 @@ use = "yazi-rs/plugins:mount"
 rev = "781a798"
 hash = "5c4d8080367dd2561a18c1cf5a1dd295"
 
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "524c52c"
+hash = "27c50e6bc15c09096505b805b238ade0"
+
 [flavor]
 deps = []
