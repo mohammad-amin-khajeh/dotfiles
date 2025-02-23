@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -x
 
@@ -29,11 +29,11 @@ path="$4"
 out="$5"
 cmd="yazi"
 # "wezterm start --always-new-process" if you use wezterm
-termcmd="${TERMCMD:-st}"
+termcmd="${TERMCMD:-st -T 'termfilechooser'}"
 # change this to "/tmp/xxxxxxx/.last_selected" if you only want to save last selected location
 # in session (flushed after reset device)
-last_selected_path_cfg="$HOME/.config/xdg-desktop-portal-termfilechooser/.last_selected"
-mkdir -p "$(dirname last_selected_path_cfg)"
+last_selected_path_cfg="${XDG_STATE_HOME:-$HOME/.local/state}/xdg-desktop-portal-termfilechooser/last_selected"
+mkdir -p "$(dirname "$last_selected_path_cfg")"
 if [ ! -f "$last_selected_path_cfg" ]; then
   touch "$last_selected_path_cfg"
 fi
@@ -49,7 +49,7 @@ if [ -d "$last_selected" ]; then
     path="$last_selected"
   fi
 fi
-if [[ -z "$path" ]]; then
+if [ "$path" = "" ]; then
   path="$HOME"
 fi
 
@@ -73,13 +73,13 @@ Notes:
 1) This file is provided for your convenience. You
    could delete it and choose another file to overwrite
    that.
-2) If you quit ranger without opening a file, this file
+2) If you quit yazi without opening a file, this file
    will be removed and the save operation aborted.
 ' >"$path"
   set -- --chooser-file="$out" --cwd-file="$last_selected_path_cfg" "$path"
 elif [ "$directory" = "1" ]; then
   # upload files from a directory
-  set -- --cwd-file="$out" "$path"
+  set -- --chooser-file="$out" --cwd-file="$last_selected_path_cfg" "$path"
 elif [ "$multiple" = "1" ]; then
   # upload multiple files
   set -- --chooser-file="$out" --cwd-file="$last_selected_path_cfg" "$path"
@@ -88,7 +88,14 @@ else
   set -- --chooser-file="$out" --cwd-file="$last_selected_path_cfg" "$path"
 fi
 
-"$termcmd" -- "$cmd" "$@"
+command="$termcmd -- $cmd"
+for arg in "$@"; do
+  # escape double quotes
+  escaped=$(printf "%s" "$arg" | sed 's/"/\\"/g')
+  # escape spaces
+  command="$command \"$escaped\""
+done
+sh -c "$command"
 
 # Save the last selected path for the next time, only upload files from a directory operation is need
 # because `--cwd-file` will do the same thing for files(s) upload and download operations
