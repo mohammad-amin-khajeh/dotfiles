@@ -1,13 +1,11 @@
 KP_{Enter,Add}
-   pactl set-sink-volume @DEFAULT_SINK@ {-,+}1% && \
-   kill -44 $(pidof dwmblocks)
+   pactl set-sink-volume @DEFAULT_SINK@ {-,+}1% && kill -44 $(pidof dwmblocks) # update dwmblocks-async's volume module
 
 XF86Audio{Raise,Lower}Volume
-  pactl set-sink-volume @DEFAULT_SINK@ {+,-}2% && \
-  kill -44 $(pidof dwmblocks)
+  pactl set-sink-volume @DEFAULT_SINK@ {+,-}2% && kill -44 $(pidof dwmblocks) # update dwmblocks-async's volume module
 
 KP_Subtract
-  playerctl --list-all | tail -n 1 | xargs playerctl play-pause --player
+  playerctl --list-all | tail -n 1 | xargs playerctl play-pause --player # toggle the last audio stream
 
 XF86MonBrightness{Down,Up}
   brightnessctl set {5-%, 5+%}
