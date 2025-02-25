@@ -35,7 +35,9 @@ pgrep dunst || dunst &
 pgrep sxhkd || sxhkd &
 pgrep picom || picom --daemon &
 
-# HACK: kill the last instance of dwmblocks and launch a new one
+# HACK: Fix dwmblocks not starting with autostart patch
+# by executing it through zsh
+sleep 0.5
 killall dwmblocks
 zsh -c dwmblocks &
 
