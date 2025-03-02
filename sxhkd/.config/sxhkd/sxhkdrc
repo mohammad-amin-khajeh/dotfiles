@@ -68,16 +68,10 @@ super + ctrl + s; b
   open_book.sh
 
 super + ctrl + s; y; v
-  dunstify yt-dlp "downloading..." -t 2000; \
-  yt-dlp --cookies-from-browser firefox "$(xclip -o -sel c)" && \
-  dunstify "downloaded successfully✅" -t 2000 || \
-  dunstify "failed to download❌" -t 2000
+  yt-dlp.sh v "$(xclip -o -sel c)"
 
 super + ctrl + s; y; m
-  dunstify yt-dlp "downloading..." -t 2000; \
-  yt-dlp --cookies-from-browser firefox -f 140 "$(xclip -o -sel c)" && \
-  dunstify "downloaded successfully✅" -t 2000 || \
-  dunstify "failed to download❌" -t 2000
+  yt-dlp.sh m "$(xclip -o -sel c)"
 
 super + ctrl + s; c; p
   st -c termFloat -e nvim ~/Documents/coding_progress.norg
