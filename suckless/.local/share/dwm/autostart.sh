@@ -43,3 +43,7 @@ zsh -c dwmblocks &
 
 # Switch to tmux tag(tag 5)
 xdotool key super+c
+sleep 0.2
+
+# open my todo file in a floating window
+st -c termFloat -e nvim ~/Documents/reminders.txt
