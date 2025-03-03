@@ -15,4 +15,6 @@ windows:
     layout: main-horizontal
     focus: True
     panes:
-      - td
+      - shell_command: "termdown 1h30m && st -e nvim ~/Documents/reminders.txt"
+        sleep_before: 0.2
+        enter: false
