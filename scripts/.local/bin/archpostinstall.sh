@@ -18,6 +18,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   brightnessctl \
   btop \
   cmus \
+  calcurse \
   copyq \
   cuetools \
   deno \

@@ -45,5 +45,5 @@ zsh -c dwmblocks &
 xdotool key super+c
 sleep 0.2
 
-# open my todo file in a floating window
-st -c termFloat -e nvim ~/Documents/reminders.txt
+# open calcurse
+st -e calcurse
