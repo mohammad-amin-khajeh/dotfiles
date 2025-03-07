@@ -15,4 +15,6 @@ windows:
     layout: main-horizontal
     focus: True
     panes:
-      - td
+      - shell_command: "termdown -s -q 5400 && st -e calcurse"
+        sleep_before: 0.2
+        enter: false
