@@ -24,6 +24,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   deno \
   dunst \
   easytag \
+  entr \
   eza \
   fastfetch \
   fcitx5-im \
