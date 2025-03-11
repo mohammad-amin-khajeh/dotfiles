@@ -1,6 +1,3 @@
-[submodule "neovim/.config/nvchad"]
-	path = neovim/.config/nvchad
-	url = https://github.com/mohammad-amin-khajeh/nvim
 [submodule "neovim/.config/nvim"]
 	path = neovim/.config/nvim
 	url = https://github.com/mohammad-amin-khajeh/lazyvim
