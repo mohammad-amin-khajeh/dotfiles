@@ -106,6 +106,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   xwallpaper \
   yazi \
   zathura \
+  zathura-cb \
   zathura-pdf-poppler \
   zip \
   zola \
