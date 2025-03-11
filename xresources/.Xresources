@@ -25,22 +25,23 @@
 
 ! dwm colors
 dwm.normbgcolor: #000000
-dwm.normbordercolor: \#ff0000
-dwm.normfgcolor: #9ece6a
-dwm.normfloatcolor: #9ece6a
+dwm.normbordercolor: #ff0000
+dwm.normfgcolor: #9fe044
+dwm.normfloatcolor: #ff0000
 dwm.selbgcolor: #ba8baf
-dwm.selbordercolor: \#00ff00
+dwm.selbordercolor: #00ff00
 dwm.selfgcolor: #ab4642
-dwm.selfloatcolor: #9ece6a
+dwm.selfloatcolor: #00ff00
 dwm.tagsnormbgcolor: #000000
 dwm.tagsnormbordercolor: #f7ca88
-dwm.tagsnormfgcolor: #9ece6a
-dwm.tagsselbgcolor: #9ece6a
-dwm.tagsselbordercolor: #ba8baf
+dwm.tagsnormfgcolor: #9fe044
+dwm.tagsselbgcolor: #9fe044
 dwm.tagsselfgcolor: #000000
 dwm.titleselbgcolor: #000000
-dwm.titleselfgcolor: #9ece6a
+dwm.titleselfgcolor: #9fe044
 dwm.titlenormbgcolor: #000000
+dwm.urgfgcolor: #15151e
+dwm.urgbgcolor: #f7768e
 
 Xft.antialias: 1
 Xft.autohint: 0
