@@ -21,6 +21,6 @@ for file in files:
         second  = dates.group(6).translate(translation_table)
 
         call(
-            f"touch -d '{year}/{month}/{day} {hour}:{minute}:{second}' '{file}'",
+            f"touch -m -d '{year}/{month}/{day} {hour}:{minute}:{second}' '{file}'",
             shell=True,
         )
