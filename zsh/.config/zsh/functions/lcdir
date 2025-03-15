@@ -1,3 +1,3 @@
   mkdir -p "$1/$2" # $1 => leetcode difficulty, $2 => problem title
   cd "$1/$2"
-  nvim solution.${3} # $3 => file extension(py, for example)
+  nvim solution.${3:-py} # $3 => file extension(py, for example)
