@@ -63,6 +63,8 @@ alias \
   roficalc='rofi -show calc -modi calc -no-show-match -no-sort' \
   rsync='rsync -vrPlu' \
   td='termdown' \
+  te='trash-empty' \
+  tl='trash-list' \
   tma='tmux attach-session' \
   tmk='tmux kill-session -t' \
   tmn='tmux new-session -s' \
