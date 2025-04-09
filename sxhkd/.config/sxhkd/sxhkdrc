@@ -49,6 +49,10 @@ super + alt + l
   slock
 
 ##########Quality of life scripts##########
+
+super + ctrl + s; a
+  amount.sh
+
 super + ctrl + s; t
   toggle_tor.sh
 
