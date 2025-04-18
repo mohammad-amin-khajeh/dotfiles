@@ -107,7 +107,8 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   yazi \
   zathura \
   zathura-cb \
-  zathura-pdf-poppler \
+  zathura-pdf-mupdf \
+  tesseract-data-eng \
   zip \
   zola \
   zoxide \
