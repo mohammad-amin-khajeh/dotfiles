@@ -1,5 +1,5 @@
 -o ~/Videos/youtube/%(title)s.%(ext)s
--f "244+bestaudio/606+bestaudio/134+bestaudio/22/298+bestaudio"
+-f "244+bestaudio/606+bestaudio/231+bestaudio/609+bestaudio/134+bestaudio/22/298+bestaudio"
 # -f bestvideo[height<=?480]+bestaudio/bestvideo[width<=?480]+bestaudio
 --no-mtime
 --sub-langs "ja"
