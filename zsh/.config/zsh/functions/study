@@ -1,0 +1,2 @@
+  # study for 1 hour then take a 5 minute break
+  termdown -s -q ${1:-3600} && st -e calcurse && rest ${2:-300}

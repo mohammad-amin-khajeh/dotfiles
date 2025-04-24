@@ -1,0 +1,1 @@
+  termdown -s -q "$1" && notify-send "go back to studying"
