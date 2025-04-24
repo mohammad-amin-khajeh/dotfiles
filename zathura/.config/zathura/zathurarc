@@ -17,5 +17,6 @@ map i recolor
 # map f scroll full-down
 # map b scroll full-up
 map g goto top
+map O feedkeys ":exec zathura $FILE<Return>"
 
 include ./tokyonight-night.zathurarc
