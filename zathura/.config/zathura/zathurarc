@@ -2,7 +2,7 @@ set statusbar-h-padding 0
 set statusbar-v-padding 0
 set guioptions ""
 set sandbox none
-set default-bg \#282c34
+set default-bg \#000000
 set page-padding 1
 set selection-clipboard clipboard
 map u scroll half-up
@@ -18,5 +18,3 @@ map i recolor
 # map b scroll full-up
 map g goto top
 map O feedkeys ":exec zathura $FILE<Return>"
-
-include ./tokyonight-night.zathurarc
