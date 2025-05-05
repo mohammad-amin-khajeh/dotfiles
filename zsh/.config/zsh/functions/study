@@ -1,2 +1,8 @@
   # study for 1 hour then take a 5 minute break
-  termdown -s -q ${1:-7200} && st -e calcurse && rest ${2:-300}
+
+  curr_timeout=$(set q | grep "timeout" | awk '{print $2}')
+  xset s 9999 9999
+  termdown -s -q ${1:-7200} &&
+  st -e calcurse &&
+  xset s $curr_timeout $curr_timeout &&
+  rest ${2:-300}
