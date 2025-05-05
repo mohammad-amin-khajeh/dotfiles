@@ -50,7 +50,7 @@ super + alt + l
 
 ##########Quality of life scripts##########
 
-super + ctrl + s; a
+super + ctrl + s; a; m
   amount.sh
 
 super + ctrl + s; t
@@ -97,4 +97,12 @@ super + ctrl + s; c; a
 
 super + ctrl + s; v
   mpv "$(fd -e mp4 -e mkv -e webm --full-path ~/Documents/konkour | sed 's|^.*/||' | rofi -i -dmenu -p "video to study: " | while read filename; do fd -e mp4 -e mkv -e webm --full-path ~/Documents/konkour | grep "/$filename$" | head -n 1; done)"
+
+# anki card
+super + ctrl + s; a; c
+  xdotool search --name "Add" windowactivate --sync key --clearmodifiers ctrl+v
+
+# anki image
+super + ctrl + s; a; i
+  xdotool search --name "Add" windowactivate --sync key --clearmodifiers ctrl+shift+o
 ###########################################
