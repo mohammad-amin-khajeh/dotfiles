@@ -1,1 +1,2 @@
-  termdown -s -q "$1" && notify-send "go back to studying"
+rest_time=${$(t2s $1):-$(t2s 5m)}
+termdown -s -q "$rest_time" && notify-send "go back to studying"
