@@ -122,7 +122,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
 # i3blocks \
 
 # # Download anki
-[ ! -f "$HOME/Downloads/anki-24.11-linux-qt6.tar.zst" ] && wget https://apps.ankiweb.net/downloads/archive/anki-24.11-linux-qt6.tar.zst
+[ ! -f "$HOME/Downloads/anki-25.02.5-linux-qt6.tar.zst" ] && wget https://github.com/ankitects/anki/releases/download/25.02.5/anki-25.02.5-linux-qt6.tar.zst
 
 # install yt-dlp nightly
 ver="$(curl https://github.com/yt-dlp/yt-dlp-nightly-builds/releases | rg -i -o nightly\ [0-9].*[0-9] | rev | cut -d' ' -f 1 | rev | cut -d \< -f 1 | head -n 1)"
