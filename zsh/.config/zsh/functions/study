@@ -4,7 +4,7 @@
   study_time=${$(t2s $1):-$(t2s 2h)}
   rest_time=${$(t2s $2):-$(t2s 5m)}
 
-  xset s 9999 9999
+  xset s off
   termdown -s -q "$study_time" &&
   st -e calcurse &&
   xset s $curr_timeout $curr_timeout &&
