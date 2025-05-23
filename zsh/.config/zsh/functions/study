@@ -1,11 +1,10 @@
   # study for 90 minutes then take a 5 minute break
 
-  curr_timeout=$(xset q | grep "timeout" | awk '{print $2}')
   study_time=${$(t2s $1):-$(t2s 1h30m)}
   rest_time=${$(t2s $2):-$(t2s 5m)}
 
   xset s off
   termdown -s -q "$study_time" &&
   st -e calcurse &&
-  xset s $curr_timeout $curr_timeout &&
+  xset s on &&
   rest "$rest_time"
