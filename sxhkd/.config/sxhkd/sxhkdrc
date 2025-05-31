@@ -100,9 +100,9 @@ super + ctrl + s; v
 
 # anki card
 super + ctrl + s; a; c
-  xdotool search --name "Add" windowactivate --sync key --clearmodifiers ctrl+v
+  xdotool search --name "Add" windowactivate; sleep 0.1; xdotool key ctrl+v
 
 # anki image
 super + ctrl + s; a; i
-  xdotool search --name "Add" windowactivate --sync key --clearmodifiers ctrl+shift+o
+  xdotool search --name "Add" windowactivate; sleep 0.1; xdotool key ctrl+shift+o
 ###########################################
