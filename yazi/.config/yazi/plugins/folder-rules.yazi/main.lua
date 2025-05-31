@@ -1,7 +1,7 @@
 local function setup()
 	ps.sub("cd", function()
 		local cwd = cx.active.parent.cwd
-		local folder_names = { "konkour" } -- Add all the folder names you want to match here
+		local folder_names = {} -- Add all the folder names you want to match here
 
 		-- Function to check if any of the parent directories match the folder names
 		local function check_parent_folders(path)
