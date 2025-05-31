@@ -7,6 +7,8 @@ set page-padding 1
 set selection-clipboard clipboard
 map u scroll half-up
 map d scroll half-down
+map b scroll full-up
+map f scroll full-down
 map D toggle_page_mode
 map r reload
 map R rotate
