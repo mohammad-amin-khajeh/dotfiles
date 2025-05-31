@@ -2,7 +2,7 @@
 
 # redshift to make screen light easier on the eyes
 redshift -x
-redshift -O 2800k &
+redshift -O 2000k &
 
 ########################################
 ######### ENABLE ONE OF THEM ###########
