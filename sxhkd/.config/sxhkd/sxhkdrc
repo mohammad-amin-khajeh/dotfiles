@@ -20,7 +20,7 @@ super + v
 super + shift + s; w
   curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
   file="${HOME}/Pictures/screenshots/${curdate}.png" && \
-  maim "$file" && \
+  shotgun "$file" && \
   echo "file://${file}" | \
   xclip -sel c -t text/uri-list && \
   dunstify 📸 "screenshot taken" -t 1200
@@ -29,14 +29,16 @@ super + shift + s; w
 super + shift + s; r
   curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
   file="${HOME}/Pictures/screenshots/${curdate}.png" && \
-  maim --select "$file" && \
+  sel=$(slop) && \
+  shotgun -g "$sel" "$file" && \
   echo "file://${file}" | \
   xclip -sel c -t text/uri-list
 
 
 # "copy" a region to clipboard
 super + shift + s; c
-  maim --select | xclip -sel c -t image/png
+  sel=$(slop) && \
+  shotgun -g $sel - | xclip -t 'image/png' -selection clipboard
 
 super + w
     wifi-rofi

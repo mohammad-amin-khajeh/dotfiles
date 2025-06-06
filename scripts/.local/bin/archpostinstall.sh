@@ -17,8 +17,8 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   bat \
   brightnessctl \
   btop \
-  cmus \
   calcurse \
+  cmus \
   copyq \
   cuetools \
   deno \
@@ -44,7 +44,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   lxappearance-gtk3 \
   ly \
   mac \
-  maim \
   maven \
   mpv \
   mpv-mpris \
@@ -73,6 +72,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   rofimoji \
   screenkey \
   shntool \
+  shotgun \
   silicon \
   simple-mtpfs \
   slock \
@@ -82,6 +82,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   tealdeer \
   telegram-desktop \
   termdown \
+  tesseract-data-eng \
   tmux \
   tmux-plugin-manager \
   tmuxp \
@@ -108,7 +109,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   zathura \
   zathura-cb \
   zathura-pdf-mupdf \
-  tesseract-data-eng \
   zip \
   zola \
   zoxide \
