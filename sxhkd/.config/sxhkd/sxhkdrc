@@ -61,9 +61,6 @@ super + ctrl + s; t
 super + ctrl + s; r; w
   reminder.sh
 
-super + ctrl + s; r; r
-  st -c termFloat -e nvim ~/Documents/reminders.txt
-
 super + ctrl + s; w
   wallpaper.sh
 
