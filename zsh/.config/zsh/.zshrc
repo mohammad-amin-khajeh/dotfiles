@@ -51,7 +51,6 @@ alias \
   n='nvim' \
   nc='$EDITOR ~/Documents/coding_progress.norg' \
   nfetch='fastfetch -c ~/.config/fastfetch/neofetch.jsonc' \
-  nr='$EDITOR ~/Documents/reminders.txt' \
   open='xdg-open' \
   pac='sudo pacman' \
   pacins='sudo pacman -S --needed' \
