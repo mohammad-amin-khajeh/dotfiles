@@ -24,6 +24,7 @@ require("mime-ext"):setup({
 		heif = "image/heif",
 		heic = "image/heic",
 		zst = "application/zstd",
+		ts = "video/mp4",
 	},
 
 	-- If the mime-type is not in both filename and extension databases,
