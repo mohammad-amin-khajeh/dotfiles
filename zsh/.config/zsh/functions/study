@@ -5,7 +5,7 @@
 
   xset s off
   termdown -s -q "$study_time" &&
-  st -e calcurse
-  st -c termFloat -e nvim ~/Documents/coding_progress.norg
+  "$term" -e calcurse
+  "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
   xset s on
   rest "$rest_time"

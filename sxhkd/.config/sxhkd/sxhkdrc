@@ -77,14 +77,14 @@ super + ctrl + s; y; m
   yt-dlp.sh m "$(xclip -o -sel c)"
 
 super + ctrl + s; c; p
-  st -c termFloat -e nvim ~/Documents/coding_progress.norg
+  "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
 
 super + ctrl + s; c; c
   rofi -show calc -modi calc -no-show-match -no-sort
 
 # Calcurse Open
 super + ctrl + s; c; o
-  st -e calcurse
+  "$term" -e calcurse
 
  # Calcurse Todo
 super + ctrl + s; c; t
