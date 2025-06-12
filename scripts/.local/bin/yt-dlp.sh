@@ -11,7 +11,11 @@ fi
 
 dunstify yt-dlp "downloading..." -t 2000
 
-[[ "$opts" != "" ]] && yt-dlp "$opts" "$url" || yt-dlp "$url"
+if [[ "$opts" != "" ]]; then
+  yt-dlp "$opts" "$url"
+else
+  yt-dlp "$url"
+fi
 
 if [[ $? -eq 0 ]]; then
   dunstify "yt-dlp" "downloaded successfully✅" -t 2000
