@@ -44,6 +44,3 @@ zsh -c dwmblocks &
 # Switch to tmux tag(tag 5)
 xdotool key super+c
 sleep 0.2
-
-# open calcurse
-st -e calcurse
