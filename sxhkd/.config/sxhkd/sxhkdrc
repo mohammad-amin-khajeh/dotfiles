@@ -29,7 +29,7 @@ super + shift + s; w
 super + shift + s; r
   curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
   file="${HOME}/Pictures/screenshots/${curdate}.png" && \
-  sel=$(slop) && \
+  sel=$(hacksaw) && \
   shotgun -g "$sel" "$file" && \
   echo "file://${file}" | \
   xclip -sel c -t text/uri-list
@@ -37,7 +37,7 @@ super + shift + s; r
 
 # "copy" a region to clipboard
 super + shift + s; c
-  sel=$(slop) && \
+  sel=$(hacksaw) && \
   shotgun -g $sel - | xclip -t 'image/png' -selection clipboard
 
 super + w

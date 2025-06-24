@@ -34,6 +34,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   fzf \
   github-cli \
   gparted \
+  hacksaw \
   htop \
   imlib2 \
   jq \
