@@ -80,7 +80,7 @@ super + ctrl + s; c; p
   "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
 
 super + ctrl + s; c; c
-  rofi -show calc -modi calc -no-show-match -no-sort
+  qalculate-gtk
 
 # Calcurse Open
 super + ctrl + s; c; o

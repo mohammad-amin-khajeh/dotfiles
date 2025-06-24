@@ -65,11 +65,11 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   playerctl \
   pnpm \
   python-pipx \
+  qalculate-gtk \
   qbittorrent \
   redshift \
   ripgrep \
   rofi \
-  rofi-calc \
   rofimoji \
   screenkey \
   shntool \
