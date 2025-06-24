@@ -80,7 +80,7 @@ super + ctrl + s; c; p
   "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
 
 super + ctrl + s; c; c
-  qalculate-gtk
+  qalculate-gtk --title qalcFloat
 
 # Calcurse Open
 super + ctrl + s; c; o
