@@ -1,7 +1,7 @@
   # study for 90 minutes then take a 5 minute break
 
   study_time=${$(t2s $1):-$(t2s 1h30m)}
-  rest_time=${$(t2s $2):-$(t2s 5m)}
+  rest_time=${$(t2s $2):-$(t2s 10m)}
 
   xset s off
   termdown -s -q "$study_time" &&
