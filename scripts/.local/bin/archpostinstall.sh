@@ -87,14 +87,17 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   tmux \
   tmux-plugin-manager \
   tmuxp \
+  tinymist \
   tor \
   trash-cli \
   ttf-cascadia-code-nerd \
+  ttf-cm-unicode \
   ttf-font-awesome \
   ttf-joypixels \
   ttf-ms-fonts \
   ttf-opensans \
   typescript \
+  typst \
   udisks2 \
   ueberzugpp \
   unzip \
