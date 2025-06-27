@@ -9,6 +9,8 @@ map u scroll half-up
 map d scroll half-down
 map b scroll full-up
 map f scroll full-down
+map l follow
+map <C-l> display_link
 map D toggle_page_mode
 map r reload
 map R rotate
