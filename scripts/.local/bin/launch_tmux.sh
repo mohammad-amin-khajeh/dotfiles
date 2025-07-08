@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-# path_to_tmux_sessionizer=".local/bin/tmux-sessionizer"
-tmuxp_layout="leetcode"
-if pgrep tmux &>/dev/null; then
+if pgrep tmux:\ server &>/dev/null; then
   tmux attach
 else
-  tmuxp load "$tmuxp_layout"
+  "$XDG_CONFIG_HOME"/tmux/login_session.sh
 fi
