@@ -17,8 +17,5 @@ map R rotate
 map K zoom in
 map J zoom out
 map i recolor
-# map p print
-# map f scroll full-down
-# map b scroll full-up
 map g goto top
 map O feedkeys ":exec zathura $FILE<Return>"
