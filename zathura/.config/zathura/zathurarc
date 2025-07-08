@@ -2,8 +2,8 @@ set statusbar-h-padding 0
 set statusbar-v-padding 0
 set guioptions ""
 set sandbox none
-set default-bg \#000000
-set page-padding 1
+set default-bg "#000"
+set page-padding 0
 set selection-clipboard clipboard
 map u scroll half-up
 map d scroll half-down
