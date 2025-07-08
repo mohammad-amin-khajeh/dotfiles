@@ -200,9 +200,9 @@ install_suckless nsxiv nsxiv
 # [ -f /usr/share/zsh/site-functions/_cargo ] || rustup completions zsh cargo | sudo tee /usr/share/zsh/site-functions/_cargo
 
 # setting grub options
-sudo sed -i "s/GRUB_DEFAULT='0'/GRUB_DEFAULT='saved'/" /etc/default/grub
-sudo sed -i "s/#GRUB_SAVEDEFAULT=true/GRUB_SAVEDEFAULT=true/" /etc/default/grub
-sudo sed -i "s/GRUB_DISABLE_SUBMENU='false'/GRUB_DISABLE_SUBMENU='true'/" /etc/default/grub
+if echo "$pass" | sudo -S sed -i "s/GRUB_DEFAULT='0'/GRUB_DEFAULT='saved'/" /etc/default/grub; then echo "'GRUB_DEFAULT' set to 'saved'."; fi
+if echo "$pass" | sudo -S sed -i "s/#GRUB_SAVEDEFAULT=true/GRUB_SAVEDEFAULT=true/" /etc/default/grub; then echo "'GRUB_SAVEDEFAULT' set to 'true'."; fi
+if echo "$pass" | sudo -S sed -i "s/GRUB_DISABLE_SUBMENU='false'/GRUB_DISABLE_SUBMENU='true'/" /etc/default/grub; then echo "'GRUB_DISABLE_SUBMENU' set to 'true'."; fi
 
 # add custom touchpad gestures
 echo 'Section "InputClass"
