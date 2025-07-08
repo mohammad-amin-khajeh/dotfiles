@@ -1,3 +1,6 @@
+# completions
+mattmc3/ez-compinit
+
 # theme
 romkatv/powerlevel10k
 

@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# completions
+zstyle ':plugin:ez-compinit' 'compstyle' 'ohmy'
+
 # Set the root name of the plugins files (.txt and .zsh) antidote will use.
 zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins
 
@@ -107,7 +110,7 @@ setopt hist_ignore_space
 unsetopt nomatch
 
 eval "$(zoxide init zsh)"
-autoload -U compinit && compinit
+
 
  # Edit the current command with default editor
 autoload -z edit-command-line
