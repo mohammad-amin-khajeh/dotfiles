@@ -86,7 +86,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   tesseract-data-eng \
   tmux \
   tmux-plugin-manager \
-  tmuxp \
   tinymist \
   tor \
   trash-cli \
