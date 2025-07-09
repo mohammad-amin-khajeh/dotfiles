@@ -35,12 +35,10 @@ pgrep dunst || dunst &
 pgrep sxhkd || sxhkd &
 pgrep picom || picom --daemon &
 
-# HACK: Fix dwmblocks not starting with autostart patch
+# HACK: Fix a bug where dwmblocks would not start if executed directly
 # by executing it through zsh
-sleep 0.5
-killall dwmblocks
-zsh -c dwmblocks &
+pgrep dwmblocks || zsh -c "dwmblocks" &
 
 # Switch to tmux tag(tag 5)
+sleep 0.1
 xdotool key super+c
-sleep 0.2
