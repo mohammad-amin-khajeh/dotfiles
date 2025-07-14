@@ -48,7 +48,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   maven \
   mpv \
   mpv-mpris \
-  nekoray-bin \
+  nekoray-mahdi-zarei-bin \
   neovim \
   network-manager-applet \
   noto-fonts-cjk \
