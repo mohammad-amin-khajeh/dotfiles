@@ -7,4 +7,4 @@ book_dir="${HOME}/Documents/books"
 cd "$book_dir"
 books="$(find . -iname '*.pdf' -type f -exec ls -1t "{}" +)"
 book="$(echo "$books" | $launcher)"
-"$pdf_reader" "$book"
+"$pdf_reader" "$book" &
