@@ -46,9 +46,7 @@ keymap = [
   { on = [ "8" ],           run = "plugin relative-motions 8",   desc = "Move in relative steps" },
   { on = [ "9" ],           run = "plugin relative-motions 9",   desc = "Move in relative steps" },
 
-  { on = [ "c", "t" ],      run = "plugin ouch --args=tgz",   desc = "compress to tar.gz with ouch" },
-  { on = [ "c", "z" ],      run = "plugin ouch --args=zip",   desc = "compress to zip with ouch" },
-  { on = [ "c", "7" ],      run = "plugin ouch --args=7z",  desc = "compress to 7z with ouch" },
+  { on = [ "C" ],           run = "plugin ouch",                 desc = "compress with ouch(format is detected based on file extension)" },
 
 	# Hopping
 	{ on = "k", run = "arrow -1", desc = "Move cursor up" },
