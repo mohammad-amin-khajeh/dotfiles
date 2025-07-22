@@ -33,8 +33,8 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   ffmpegthumbnailer \
   fzf \
   github-cli \
-  gparted \
   glow \
+  gparted \
   hacksaw \
   htop \
   imlib2 \
@@ -85,9 +85,9 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   telegram-desktop \
   termdown \
   tesseract-data-eng \
+  tinymist \
   tmux \
   tmux-plugin-manager \
-  tinymist \
   tor \
   trash-cli \
   ttf-cascadia-code-nerd \
