@@ -31,13 +31,9 @@ source ${zsh_plugins}.zsh
 
 #useful aliases
 alias \
-  bc='bc -ql' \
   c='clear' \
-  cat='bat' \
-  cm='cmus' \
   cp='cp -ivp' \
   df='df -h' \
-  dl='aria2c' \
   du='du -h' \
   ffmpeg='ffmpeg -hide_banner' \
   ffmpeg='ffmpeg -hide_banner' \
@@ -47,34 +43,25 @@ alias \
   ll='eza -l --icons -a --git' \
   ls='eza --icons -a --group-directories-first' \
   mkd='mkdir -pv' \
-  mnt='sudo mount' \
   mpvfs='mpv --player-operation-mode=pseudo-gui' \
   mpyt='mpv --ytdl-format=302+140/298+140/22/302+140/398+140/244+140' \
   mv='mv -iv' \
   n='nvim' \
-  nc='$EDITOR ~/Documents/coding_progress.norg' \
   nfetch='fastfetch -c ~/.config/fastfetch/neofetch.jsonc' \
   open='xdg-open' \
   pac='sudo pacman' \
   pacins='sudo pacman -S --needed' \
   pacrem='sudo pacman -Rns' \
   pacup='sudo pacman -Syu' \
-  q='exit' \
-  rclone='rclone -v' \
   rm='rm -vI' \
-  roficalc='rofi -show calc -modi calc -no-show-match -no-sort' \
   rsync='rsync -vrPlu' \
-  td='termdown' \
   te='trash-empty' \
   tl='trash-list' \
-  tma='tmux attach-session' \
-  tmk='tmux kill-session -t' \
-  tmn='tmux new-session -s' \
   tmux='tmux -u' \
   tree='eza --tree -a --long --icons' \
   umnt='sudo umount' \
-  wget="wget --hsts-file=$XDG_DATA_HOME/.wget-hsts" \
-  ytcut='yt-dlp -f 135+140/244+140 --force-keyframes-at-cuts --download-sections' \
+  wget="wget --no-hsts" \
+  ytcut='yt-dlp --force-keyframes-at-cuts --download-sections' \
   ytdl='yt-dlp' \
   za='zathura'
 
