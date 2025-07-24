@@ -44,7 +44,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   libnotify \
   luarocks \
   lxappearance-gtk3 \
-  ly \
   mac \
   maven \
   mpv \
@@ -106,6 +105,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   xcolor \
   xdg-desktop-portal-termfilechooser-hunkyburrito-git \
   xdotool \
+  xorg-xinit \
   xorg-xrandr \
   xorg-xrdb \
   xwallpaper \
@@ -169,10 +169,6 @@ if (subject.isInGroup("wheel")) {
 
 # decrease swappiness
 echo 'vm.swappiness = 10' | sudo tee -a /etc/sysctl.d/99-swappiness.conf
-
-# enable ly
-echo "$pass" | sudo -S systemctl list-units | rg sddm.service &>/dev/null && sudo systemctl disable sddm.service
-echo "$pass" | sudo -S systemctl enable ly.service
 
 # make zsh the default shell
 echo '/sbin/zsh
