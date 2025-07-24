@@ -2,11 +2,11 @@
 	path = neovim/.config/nvim
 	url = https://github.com/mohammad-amin-khajeh/lazyvim
 [submodule "suckless/.local/src/dwm-flexipatch"]
-	path = suckless/.local/src/dwm-flexipatch
-	url = https://github.com/mohammad-amin-khajeh/dwm
+	path = suckless/.local/src/dwm
+	url = https://github.com/mohammad-amin-khajeh/dwm-flexipatch
 [submodule "suckless/.local/src/st-flexipatch"]
-	path = suckless/.local/src/st-flexipatch
-	url = https://github.com/mohammad-amin-khajeh/st
+	path = suckless/.local/src/st
+	url = https://github.com/mohammad-amin-khajeh/st-flexipatch
 [submodule "suckless/.local/src/dwmblocks-async"]
 	path = suckless/.local/src/dwmblocks-async
 	url = https://github.com/mohammad-amin-khajeh/dwmblocks-async
