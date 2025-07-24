@@ -191,8 +191,8 @@ install_suckless() {
   echo "$pass" | sudo -S make install
 }
 
-install_suckless dwm-flexipatch dwm
-install_suckless st-flexipatch st
+install_suckless dwm dwm-flexipatch
+install_suckless st st-flexipatch
 install_suckless dwmblocks-async dwmblocks-async
 install_suckless nsxiv nsxiv
 
