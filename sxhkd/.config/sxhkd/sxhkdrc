@@ -58,7 +58,8 @@ super + alt + l
 super + ctrl + s; a; m
   amount.sh
 
-super + ctrl + s; t
+# tor connect
+super + ctrl + s; t; c
   toggle_tor.sh
 
 super + ctrl + s; r; w
@@ -78,6 +79,9 @@ super + ctrl + s; y; v
 
 super + ctrl + s; y; m
   yt-dlp.sh m "$(xclip -o -sel c)"
+
+super + ctrl + s; t; t
+  notify-send "study time:" "$(today_time.sh ~/Documents/coding_progress.norg)" -t 1000
 
 super + ctrl + s; c; p
   "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
