@@ -92,6 +92,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   ttf-cascadia-code-nerd \
   ttf-cm-unicode \
   ttf-font-awesome \
+  ttf-jetbrains-mono-nerd \
   ttf-joypixels \
   ttf-ms-fonts \
   ttf-opensans \
