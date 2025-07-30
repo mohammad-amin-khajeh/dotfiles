@@ -115,4 +115,7 @@ super + ctrl + s; a; c
 # anki image
 super + ctrl + s; a; i
   xdotool search --name "Add" windowactivate; sleep 0.1; xdotool key ctrl+shift+o
+
+super + ctrl + s; d
+  wget -P ~/Downloads -c "$(xclip -o -sel c)"
 ###########################################
