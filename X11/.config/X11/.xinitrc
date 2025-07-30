@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 xrdb="xrdb"
 xinitdir="/etc/X11/xinit"
 xmodmap="xmodmap"
 
-userresources="$XDG_CONFIG_HOME/X11/.Xresources"
-usermodmap="$HOME/.Xmodmap"
+userresources="${XDG_CONFIG_HOME:-$HOME/.config/}/X11/.Xresources"
+usermodmap="${XDG_CONFIG_HOME:-$HOME/.config/}/X11/.Xmodmap"
 sysresources="$xinitdir/.Xresources"
 sysmodmap="$xinitdir/.Xmodmap"
 
@@ -72,12 +72,19 @@ xinput set-prop 9 "libinput Accel Speed" 0.8 &
 xinput set-prop 8 "libinput Accel Speed" 0.8 &
 
 # Launch startup programs
-copyq &
-nm-applet &
-dunst &
-sxhkd &
-picom --daemon &
-dwmblocks &
+# copyq &
+# nm-applet &
+# dunst &
+# sxhkd &
+# picom --daemon &
+# dwmblocks &
+programs=("copyq" "dunst" "nm-applet" "sxhkd" "picom" "dwmblocks" "xhidecursor")
+
+for program in "${programs[@]}"; do
+  if ! pidof -sx "$program" >/dev/null && command -v "$program" >/dev/null; then
+    "$program" &
+  fi
+done
 
 # switch to tag 5 upon entering dwm
 # the delay may or may not be enough
