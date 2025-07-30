@@ -8,7 +8,7 @@
  */
 
 configuration {
-  font: "caskaydiacove nerd font mono bold 11";
+  font: "jetbrainsmono nf bold 11";
 
   drun {
     display-name: "[^.^]";
