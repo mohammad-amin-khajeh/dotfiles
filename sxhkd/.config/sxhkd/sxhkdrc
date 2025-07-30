@@ -44,7 +44,7 @@ super + shift + s; c
   shotgun -g $sel - | xclip -t 'image/png' -selection clipboard
 
 super + w
-    wifi-rofi
+    "$term" -c termFloat -e nmtui
 
 # toggle screenkey
 super + alt + s
