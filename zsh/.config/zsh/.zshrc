@@ -60,7 +60,7 @@ alias \
   tmux='tmux -u' \
   tree='eza --tree -a --long --icons' \
   umnt='sudo umount' \
-  wget="wget --no-hsts" \
+  wget='wget --no-hsts' \
   ytcut='yt-dlp --force-keyframes-at-cuts --download-sections' \
   ytdl='yt-dlp' \
   za='zathura'
