@@ -1,6 +1,7 @@
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 set guioptions ""
+set font "jetbrainsmono nf 10"
 set sandbox none
 set default-bg "#000"
 set page-padding 0
