@@ -27,7 +27,6 @@ export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
 export PATH="${PATH}:$HOME/.local/bin:$HOME/.local/bin/fred:$CARGO_HOME/bin:$XDG_CONFIG_HOME/composer/vendor/bin"
 export QT_IM_MODULE="fcitx"
 export RUSTUP_HOME="$HOME/.local/rustup"
-export SHELL="/bin/zsh"
 export term="st"
 export VISUAL="nvim"
 export XMODIFIERS=@im="fcitx"
@@ -36,8 +35,8 @@ export ZDOTDIR="$HOME/.config/zsh"
 # pnpm
 export PNPM_HOME="/home/mmd/.local/share/pnpm"
 case ":$PATH:" in
-*":$PNPM_HOME:"*) ;;
-*) export PATH="$PNPM_HOME:$PATH" ;;
+	*":$PNPM_HOME:"*) ;;
+	*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
 # source fzf colors
