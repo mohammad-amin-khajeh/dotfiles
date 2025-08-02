@@ -111,7 +111,7 @@ keymap = [
 	{ on = "r",             run = "rename --cursor=before_ext",       desc = "Rename selected file(s)" },
 	{ on = ";",             run = "shell --interactive",              desc = "Run a shell command" },
 	{ on = ":",             run = "shell --block --interactive",      desc = "Run a shell command (block until finishes)" },
-	{ on = "`",             run = 'shell "$SHELL" --block',           desc = "Run a shell command (block until finishes)" },
+	{ on = "`",             run = 'shell zsh --block',                desc = "Open an interactive shell" },
 	{ on = ".",             run = "hidden toggle",                    desc = "Toggle the visibility of hidden files" },
 
 	{ on = [ "s", "f" ],    run = "search fd",                        desc = "Search files by name using fd" },
