@@ -171,11 +171,6 @@ if (subject.isInGroup("wheel")) {
 # decrease swappiness
 echo 'vm.swappiness = 10' | sudo tee -a /etc/sysctl.d/99-swappiness.conf
 
-# make zsh the default shell
-echo '/sbin/zsh
-zsh' | sudo tee -a /etc/shells
-chsh "$USER" -s "$(which zsh)"
-
 # fix journal taking all the space
 echo "$pass" | sudo -S sed -i 's/#SystemMaxUse=/SystemMaxUse=50M/' /etc/systemd/journald.conf
 
