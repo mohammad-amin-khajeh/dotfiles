@@ -21,6 +21,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   cmus \
   copyq \
   cuetools \
+  dash \
   deno \
   dunst \
   easytag \

@@ -1,0 +1,9 @@
+#!/usr/bin/env dash
+
+if [ "$1" != "" ]; then
+  rest_time="$(t2s "$1")"
+else
+  rest_time="$(t2s 5m)"
+fi
+
+termdown -s -q "$rest_time" && notify-send "go back to studying"

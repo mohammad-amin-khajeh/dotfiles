@@ -1,0 +1,3 @@
+#!/usr/bin/env dash
+
+printf "%s\n" "$1" | sed 's/d/*24*3600 +/g; s/h/*3600 +/g; s/m/*60 +/g; s/s/\+/g; s/+[ ]*$//g' | bc
