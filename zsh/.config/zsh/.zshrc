@@ -29,6 +29,11 @@ source ${zsh_plugins}.zsh
 # Theme
 [[ -f ${ZDOTDIR}/.p10k.zsh ]] && source ${ZDOTDIR}/.p10k.zsh
 
+#history
+export HISTFILE="${HOME}/.dotfiles/zsh/.config/zsh/.histfile"
+export HISTSIZE=50000
+export SAVEHIST=50000
+
 #useful aliases
 alias \
   c='clear' \
@@ -69,21 +74,11 @@ alias \
 
 #plugins and configurations
 zle_highlight+=('paste:none')
-zstyle ':completion:*' _complete _extensions completer
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' special-dirs true
-zstyle ':completion:*' rehash true
-zstyle ':completion:*' complete-options true
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path "${HOME}/.cache/zsh/.zcompcache"
-zstyle ':completion:*:*:mpv:*' file-sort modification
-zstyle ':completion:*:*:o:*' file-sort modification
-zstyle ':completion:*:*:n:*' file-sort modification
-zstyle ':completion:*:*:rm:*' file-sort modification
-zstyle ':completion:*:*:cpf:*' file-sort modification
-zstyle ':completion:*:*:pshow:*' file-sort modification
+zstyle ':completion:*:*:mpv:*'         file-sort modification
+zstyle ':completion:*:*:nsxiv-rifle:*' file-sort modification
+zstyle ':completion:*:*:n:*'           file-sort modification
+zstyle ':completion:*:*:rm:*'          file-sort modification
+zstyle ':completion:*:*:cpf:*'         file-sort modification
 zstyle ':completion::complete:*' gain-privileges 1
 setopt autocd
 setopt sharehistory
@@ -94,25 +89,24 @@ setopt hist_ignore_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
 setopt hist_ignore_space
+setopt inc_append_history
 unsetopt nomatch
 
 eval "$(zoxide init zsh)"
 
 
  # Edit the current command with default editor
-autoload -z edit-command-line
-zle -N edit-command-line
-bindkey "^x" edit-command-line
+bindkey "^x" kill-buffer
 
 #binds
 bindkey -v
 export KEYTIMEOUT=1
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
-bindkey '^W' backward-kill-word
-bindkey '^E' end-of-line
-bindkey '^A' beginning-of-line
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
 
 export WORDCHARS='~!#$%^&*,(){}[]<>?.+_\\'
