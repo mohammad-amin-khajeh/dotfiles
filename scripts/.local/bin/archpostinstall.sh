@@ -91,6 +91,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   trash-cli \
   ttf-cascadia-code-nerd \
   ttf-cm-unicode \
+  ttf-firacode-nerd \
   ttf-font-awesome \
   ttf-jetbrains-mono-nerd \
   ttf-joypixels \
