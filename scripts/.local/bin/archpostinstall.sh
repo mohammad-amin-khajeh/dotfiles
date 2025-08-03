@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ ! "$(yay -h)" ] &>/dev/null; then
+if [ ! "$(command -v yay)" ]; then
   git clone https://aur.archlinux.org/packages/yay-bin
   cd yay-bin
   makepkg -si
