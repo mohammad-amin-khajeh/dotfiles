@@ -19,7 +19,6 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   btop \
   calcurse \
   cmus \
-  copyq \
   cuetools \
   dash \
   deno \
@@ -36,6 +35,7 @@ yay -Syu --noconfirm --needed --sudoloop --removemake \
   github-cli \
   glow \
   gparted \
+  gpaste \
   hacksaw \
   htop \
   imlib2 \

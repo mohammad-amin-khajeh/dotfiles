@@ -90,7 +90,7 @@ keymap = [
 	{ on = "<C-r>",   run = "toggle_all",                         desc = "Inverse selection of all files" },
 
 	# Operation
-	{ on = "<C-c>",         run = '''shell 'for path in "$@"; do echo "file://$path"; done | xclip -i -sel c -t text/uri-list' --confirm'''},
+	{ on = "<C-c>",         run = '''shell 'for path in "$@"; do echo "file://$path"; done | xclip -i -sel clipboard' --confirm'''},
 	{ on = [ "s", "w" ],    run = '''shell 'wallpaper.sh "$1"' --confirm''',    desc = "Set new wallpaper" },
 	{ on = "o",             run = "open",                             desc = "Open selected files" },
 	{ on = "O",             run = "open --interactive",               desc = "Open selected files interactively" },

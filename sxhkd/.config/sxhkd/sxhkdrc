@@ -17,7 +17,7 @@ super + r
   rofi -show run
 
 super + v
-  copyq menu
+  rofi-gpaste
 
 # snap the "whole" screen and copy it to clipboard
 super + shift + s; w

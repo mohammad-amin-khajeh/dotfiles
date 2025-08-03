@@ -72,13 +72,12 @@ xinput set-prop 9 "libinput Accel Speed" 0.8 &
 xinput set-prop 8 "libinput Accel Speed" 0.8 &
 
 # Launch startup programs
-# copyq &
 # nm-applet &
 # dunst &
 # sxhkd &
 # picom --daemon &
 # dwmblocks &
-programs=("copyq" "dunst" "nm-applet" "sxhkd" "picom" "dwmblocks" "xhidecursor")
+programs=("dunst" "nm-applet" "sxhkd" "picom" "dwmblocks" "xhidecursor")
 
 for program in "${programs[@]}"; do
   if ! pidof -sx "$program" >/dev/null && command -v "$program" >/dev/null; then
