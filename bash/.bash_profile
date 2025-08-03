@@ -27,6 +27,9 @@ export VISUAL="nvim"
 export XMODIFIERS=@im="fcitx"
 export ZDOTDIR="$HOME/.config/zsh"
 
+# less cluttered home folder
+export HISTFILE="$XDG_STATE_HOME"/bash/history
+
 # source fzf colors
 . "$XDG_CONFIG_HOME/fzf/tokyonight_night.sh"
 
