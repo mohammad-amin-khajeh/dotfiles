@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 xrdb="xrdb"
 xinitdir="/etc/X11/xinit"
@@ -67,30 +67,26 @@ xset r rate 200 32 &
 xset s 180 180 &
 
 # Make trackpad faster
+# It changes depending on the connected devices
+# But it's typically one of these
 xinput set-prop 10 "libinput Accel Speed" 0.8 &
 xinput set-prop 9 "libinput Accel Speed" 0.8 &
 xinput set-prop 8 "libinput Accel Speed" 0.8 &
 
-# Launch startup programs
-# nm-applet &
-# dunst &
-# sxhkd &
-# picom --daemon &
-# dwmblocks &
-programs=("dunst" "nm-applet" "sxhkd" "picom" "dwmblocks" "xhidecursor")
+set -- "dunst" \
+  "dwmblocks" \
+  "nm-applet" \
+  "picom" \
+  "sxhkd" \
+  "xhidecursor"
 
-for program in "${programs[@]}"; do
+for program in "$@"; do
   if ! pidof -sx "$program" >/dev/null && command -v "$program" >/dev/null; then
     "$program" &
   fi
 done
 
-# switch to tag 5 upon entering dwm
-# the delay may or may not be enough
-# so set it accordingly
-(
-  sleep 0.5
-  xdotool key super+c
-) &
+# Start a default tmux session in case it doesn't exist
+"$HOME/.local/bin/launch_tmux.sh" &
 
 exec dwm
