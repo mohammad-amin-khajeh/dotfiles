@@ -8,125 +8,25 @@ fi
 
 set -euo pipefail
 
+apps=( "calcurse" "cmus" "fcitx5-im" "fcitx5-mozc" "firefox" "mpv" "pcmanfm-gtk3" "qalculate-gtk" "qbittorrent" "telegram-desktop" "throne-bin" "tmux" "tor" "typst" "yazi" "zathura" "zola")
+editor=( "bash-language-server" "lua-language-server" "neovim" "pyright" "ruff" "shellcheck-bin" "shellharden" "tinymist")
+fonts=( "awesome-terminal-fonts" "noto-fonts-cjk" "noto-fonts-emoji" "otf-font-awesome" "otf-ipafont" "ttf-cascadia-code-nerd" "ttf-cm-unicode" "ttf-firacode-nerd" "ttf-font-awesome" "ttf-jetbrains-mono-nerd" "ttf-joypixels" "ttf-ms-fonts" "ttf-opensans")
+libs_and_deps=( "imlib2" "libheif" "libnotify" "mac" "zathura-pdf-mupdf" "zathura-pdf-mupdf")
+shell=( "dash" "zsh" "zsh-antidote")
+theme=( "arc-gtk-theme" "lxappearance-gtk3" "papirus-icon-theme")
+tools=( "7zip" "aria2" "bat" "brightnessctl" "btop" "cuetools" "deno" "dunst" "dunst" "easytag" "entr" "eza" "fastfetch" "fd" "ffmpegthumbnailer" "fzf" "github-cli" "glow" "gparted" "gpaste" "hacksaw" "htop" "jq" "lazygit" "mpv-mpris" "network-manager-applet" "npm" "ouch" "pamixer" "pavucontrol" "picom" "playerctl" "pnpm" "python-pipx" "redshift" "ripgrep" "rofi" "rofimoji" "screenkey" "shntool" "shotgun" "silicon" "simple-mtpfs" "slock" "stow" "tailwindcss-bin" "tealdeer" "termdown" "tesseract"	"tesseract-data-eng" "tmux-plugin-manager" "trash-cli" "udisks2" "ueberzugpp" "unzip" "wget" "xdg-desktop-portal-termfilechooser-hunkyburrito-git" "zip" "zoxide")
+xorg=( "sxhkd" "xclip" "xcolor" "xdotool" "xorg-xinit" "xorg-xrandr" "xorg-xrdb" "xwallpaper")
+
 read -rp "enter your password: " pass
 yay -Syu --noconfirm --needed --sudoloop --removemake \
-  7zip \
-  arc-gtk-theme \
-  aria2 \
-  awesome-terminal-fonts \
-  bat \
-  brightnessctl \
-  btop \
-  calcurse \
-  cmus \
-  cuetools \
-  dash \
-  deno \
-  dunst \
-  easytag \
-  entr \
-  eza \
-  fastfetch \
-  fcitx5-im \
-  fcitx5-mozc \
-  fd \
-  ffmpegthumbnailer \
-  fzf \
-  github-cli \
-  glow \
-  gparted \
-  gpaste \
-  hacksaw \
-  htop \
-  imlib2 \
-  jq \
-  lazygit \
-  libheif \
-  libnotify \
-  luarocks \
-  lxappearance-gtk3 \
-  mac \
-  maven \
-  mpv \
-  mpv-mpris \
-  nekoray-mahdi-zarei-bin \
-  neovim \
-  network-manager-applet \
-  noto-fonts-cjk \
-  noto-fonts-emoji \
-  npm \
-  otf-font-awesome \
-  otf-ipafont \
-  ouch \
-  pamixer \
-  papirus-icon-theme \
-  pavucontrol \
-  pcmanfm-gtk3 \
-  picom \
-  playerctl \
-  pnpm \
-  python-pipx \
-  qalculate-gtk \
-  qbittorrent \
-  redshift \
-  ripgrep \
-  rofi \
-  rofimoji \
-  screenkey \
-  shntool \
-  shotgun \
-  silicon \
-  simple-mtpfs \
-  slock \
-  stow \
-  sxhkd \
-  tailwindcss-bin \
-  tealdeer \
-  telegram-desktop \
-  termdown \
-  tesseract-data-eng \
-  tinymist \
-  tmux \
-  tmux-plugin-manager \
-  tor \
-  trash-cli \
-  ttf-cascadia-code-nerd \
-  ttf-cm-unicode \
-  ttf-firacode-nerd \
-  ttf-font-awesome \
-  ttf-jetbrains-mono-nerd \
-  ttf-joypixels \
-  ttf-ms-fonts \
-  ttf-opensans \
-  typescript \
-  typst \
-  udisks2 \
-  ueberzugpp \
-  unzip \
-  wget \
-  xclip \
-  xcolor \
-  xdg-desktop-portal-termfilechooser-hunkyburrito-git \
-  xdotool \
-  xorg-xinit \
-  xorg-xrandr \
-  xorg-xrdb \
-  xwallpaper \
-  yazi \
-  zathura \
-  zathura-cb \
-  zathura-pdf-mupdf \
-  zip \
-  zola \
-  zoxide \
-  zsh \
-  zsh-antidote
-
-# autotiling \
-# python-i3ipc \
-# i3-back-bin \
-# i3-wm \
-# i3blocks \
+"${apps[@]}" \
+"${editor[@]}" \
+"${fonts[@]}" \
+"${libs_and_deps[@]}" \
+"${shell[@]}" \
+"${theme[@]}" \
+"${tools[@]}" \
+"${xorg[@]}"
 
 # # Download anki
 [ ! -f "$HOME/Downloads/anki-25.02.5-linux-qt6.tar.zst" ] && wget https://github.com/ankitects/anki/releases/download/25.02.5/anki-25.02.5-linux-qt6.tar.zst
