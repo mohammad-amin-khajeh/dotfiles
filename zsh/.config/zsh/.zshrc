@@ -27,7 +27,7 @@ fi
 source ${zsh_plugins}.zsh
 
 # Theme
-[[ -f ${ZDOTDIR}/.p10k.zsh ]] && source ${ZDOTDIR}/.p10k.zsh
+[[ -f "$ZDOTDIR"/.p10k.zsh ]] && source "$ZDOTDIR"/.p10k.zsh
 
 #history
 export HISTFILE="${HOME}/.dotfiles/zsh/.config/zsh/.histfile"
