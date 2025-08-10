@@ -86,7 +86,4 @@ for program in "$@"; do
   fi
 done
 
-# Start a default tmux session in case it doesn't exist
-"$HOME/.local/bin/launch_tmux.sh" &
-
 exec dwm
