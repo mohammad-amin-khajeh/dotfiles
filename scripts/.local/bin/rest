@@ -3,7 +3,7 @@
 if [ "$1" != "" ]; then
   rest_time="$(t2s "$1")"
 else
-  rest_time="$(t2s 5m)"
+  rest_time="$(t2s 10m)"
 fi
 
 termdown -s -q "$rest_time" && notify-send "go back to studying"
