@@ -109,4 +109,4 @@ bindkey '^[[B' history-substring-search-down
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-export WORDCHARS='~!#$%^&*,(){}[]<>?.+_\\'
+export WORDCHARS='~!#$%^&*,(){}[]<>?.+_\\|'
