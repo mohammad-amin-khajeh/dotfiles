@@ -93,11 +93,11 @@ super + ctrl + s; c; c
 super + ctrl + s; c; o
   "$term" -e calcurse
 
- # Calcurse Todo
+# Calcurse Todo
 super + ctrl + s; c; t
   calcurse.sh
 
- # Calcurse Appointments
+# Calcurse Appointments
 super + ctrl + s; c; a
   notify-send "$(calcurse -d1)" -t 3000
 
