@@ -86,4 +86,6 @@ for program in "$@"; do
   fi
 done
 
+(sleep 0.5 && pidof -sx gpaste-daemon >/dev/null || gpaste-client daemon) &
+
 exec dwm
