@@ -3,15 +3,13 @@
 if [ $# -eq 1 ]; then
   selected=$1
 else
-
-  selected=$(find ~/Documents/code ~/Documents/konkour ~/Documents/code/* \
-    ~/Documents/code/*/projects ~/Documents/blog ~/Documents/code/frontend/tailwind \
-    -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected=$(find -L \
+    ~/Documents/code ~/Documents/code/* \
+    ~/Documents/code/*/projects ~/Documents/blog ~/.local/src ~/.config \
+    -maxdepth 1 -type d | fzf)
 fi
 
-if [ "$selected" = "" ]; then
-  exit 0
-fi
+[ -z "$selected" ] && exit 1
 
 selected_name=$(basename "$selected" | tr . _)
 tmux_running=$(pgrep tmux)
