@@ -1,4 +1,4 @@
-#!/usr/bin/env dash
+#!/usr/bin/env sh
 
 pdf_reader="zathura"
 launcher="rofi -dmenu -i -p book: "

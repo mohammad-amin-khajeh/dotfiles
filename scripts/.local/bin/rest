@@ -1,4 +1,4 @@
-#!/usr/bin/env dash
+#!/usr/bin/env sh
 
 if [ "$1" != "" ]; then
   rest_time="$(t2s "$1")"

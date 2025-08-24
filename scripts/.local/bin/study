@@ -1,4 +1,4 @@
-#!/usr/bin/env dash
+#!/usr/bin/env sh
 # study for 90 minutes then take a 5 minute break
 
 if [ "$1" != "" ]; then

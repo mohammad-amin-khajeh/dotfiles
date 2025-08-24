@@ -1,4 +1,4 @@
-#!/usr/bin/env dash
+#!/usr/bin/env sh
 
 if pgrep tmux:\ server >/dev/null 2>&1; then
   tmux attach-session
