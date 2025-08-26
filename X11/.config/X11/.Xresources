@@ -1,8 +1,8 @@
 ! X colors.
 *foreground:        #c0caf5
-*background:        #15151e
+*background:        #000000
 *.foreground:       #c0caf5
-*.background:       #15151e
+*.background:       #000000
 
 ! Colors 0-15.
 *color0: #15151e
