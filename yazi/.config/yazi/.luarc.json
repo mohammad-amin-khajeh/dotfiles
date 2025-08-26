@@ -3,6 +3,7 @@
         "ui",
         "cx",
         "fs",
-        "ps"
+        "ps",
+        "Linemode"
     ]
 }
