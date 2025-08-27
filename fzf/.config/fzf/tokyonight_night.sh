@@ -4,7 +4,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --ansi \
   --layout=reverse \
   --border=none \
-  --color=bg+:#283457 \
+  --color=bg+:#0f0f0f \
   --color=bg:#000000 \
   --color=border:#27a1b9 \
   --color=fg:#c0caf5 \
