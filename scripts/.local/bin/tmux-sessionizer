@@ -5,7 +5,7 @@ if [ $# -eq 1 ]; then
 else
   selected=$(find -L \
     ~/Documents/code ~/Documents/code/* \
-    ~/Documents/code/*/projects ~/Documents/blog ~/.local/src ~/.config \
+    ~/.config ~/.local ~/.local/src ~/Documents ~/Documents/blog ~/Documents/code/*/projects \
     -maxdepth 1 -type d | fzf)
 fi
 
