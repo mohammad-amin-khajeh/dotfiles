@@ -107,7 +107,7 @@ super + ctrl + s; n; s
 
 # dismiss last dunst notification
 super + ctrl + s; u; n
-  dunstctl close
+  dunstctl close-all
 
 super + ctrl + s; v
   mpv "$(fd -e mp4 -e mkv -e webm --full-path ~/Documents/konkour | sed 's|^.*/||' | rofi -i -dmenu -p "video to study: " | while read filename; do fd -e mp4 -e mkv -e webm --full-path ~/Documents/konkour | grep "/$filename$" | head -n 1; done)"
