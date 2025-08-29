@@ -1,6 +1,6 @@
 [submodule "neovim/.config/nvim"]
 	path = neovim/.config/nvim
-	url = https://github.com/mohammad-amin-khajeh/lazyvim
+	url = https://github.com/mohammad-amin-khajeh/nvim
 [submodule "suckless/.local/src/dwm-flexipatch"]
 	path = suckless/.local/src/dwm
 	url = https://github.com/mohammad-amin-khajeh/dwm-flexipatch
