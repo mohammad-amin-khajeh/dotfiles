@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 dest="${HOME}/Documents/phone/Music"
 copy_with_delay() {

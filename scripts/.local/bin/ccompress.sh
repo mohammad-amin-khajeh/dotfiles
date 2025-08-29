@@ -1,8 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # shellcheck disable=2015
-
-set -euo pipefail
-shopt -s nullglob
 
 convert_tall_pic() {
   convert "$1" -filter catrom -resize 1200x\< -quality 25% "../compressed/${newpic}.webp"
@@ -31,10 +28,10 @@ for comic in "$@"; do
 
   case "$comic" in *.cbz | *.cbr | *.zip)
     unzip "$comic" -d "/tmp/manga"
-    cd /tmp/manga
+    cd /tmp/manga || exit
     mkdir raw compressed
     fd -i --glob "*.{jpg,png,jpeg,webp}" -x mv {} raw/
-    cd raw
+    cd raw || exit
     echo "conversion started"
     sleep 1
 
@@ -42,13 +39,13 @@ for comic in "$@"; do
       newpic="${pic%.*}"
       height=$(identify "$pic" | rg -oe "[[:digit:]]{3,4}x" | sed -n 1p | tr -d x)
       width=$(identify "$pic" | rg -oe "x[[:digit:]]{3,4}" | sed -n 1p | tr -d x)
-      ((width < height)) && convert_tall_pic "$pic" || convert_wide_pic "$pic"
+      [ "$width" -lt "$height" ] && convert_tall_pic "$pic" || convert_wide_pic "$pic"
       echo "converted ${newpic}.webp"
     done
     zip -9 -m "$savedir/$filename" ../compressed/*
     cd ../..
     rm -rf manga
-    cd "$basedir"
+    cd "$basedir" || exit
     ;;
   *)
     echo "the parameter you privded isn't a valid comic, aborting."

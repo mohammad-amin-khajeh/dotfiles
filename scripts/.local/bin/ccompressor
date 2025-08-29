@@ -4,55 +4,62 @@ set -euo pipefail
 
 curdir="${PWD##*/}"
 if [[ ! -d "temp" ]]; then
-	mkdir "temp"
+  mkdir "temp"
 fi
 
 if [[ ! -d "$curdir" ]]; then
-	mkdir "$curdir"
+  mkdir "$curdir"
 fi
 
 while [ -n "$1" ]; do
-	params=$(basename "$1")
-	if [[ -f "$curdir/$params" ]]; then
-		echo "$params already exists, aborting"
-		shift
-	elif [[ $# -eq 0 ]]; then
-		"no files were provided, exiting"
-		exit 1
-	else
-		case "$params" in
-			*cbz* | *cbr*)	unzip "$params" -d "temp"
-				cd "temp"
-				for folder in *; do
-					if [[ -d "$folder" ]]; then
-						cd "$folder"
-						mv * ../
-						cd ..
-						rm -r "$folder"
-					fi
-				done
-				for pics in *; do
-					case "$pics" in
-						*[jJ][pP][eE][gG]*)	extension="jpeg";;
-						*[wW][eE][bB][pP]*)	extension="webp";;
-						*[jJ][pP][gG]*)	extension="jpg"		;;
-						*[pP][nN][gG]*)	extension="png"		;;
-						*cbr* | *cbz*)	echo continue		;;
-						*)	echo "$pics"; read -p "please enter the original images' extension: " extension;;
-					esac
-					newpics="$(echo "$pics" | rev | cut -d . -f 1 --complement | rev)"
-					width=$(file "${newpics}.$extension" | grep -oE [0-9]{4}x\?.*[0-9], | cut -d x -f 1 | rev | grep -oE [0-9]{4} | rev | head -n 1)
-					height=$(file "${newpics}.$extension" | grep -oE [0-9]{4}x\?.*[0-9], | rev | cut -d x -f 1 | sed -e 's/,//g' -e 's/ //g' | rev)
-					(($width<$height)) && convert "${newpics}.$extension" -filter catrom -resize 1200x -quality 25% "${newpics}.webp" \
-						|| convert "${newpics}.$extension" -filter catrom -resize 55% -quality 30% "${newpics}.webp"
-					done
-					rm *.{png,jpg}
-					zip -9 -m "../${curdir}/${params}" *.webp
-					cd ..
-					rm -rf temp;;
-				*)	echo "the parameter you privded isn't a comic, aborting"
-					shift
-			esac
-	fi
-	shift
+  params=$(basename "$1")
+  if [[ -f "$curdir/$params" ]]; then
+    echo "$params already exists, aborting"
+    shift
+  elif [[ $# -eq 0 ]]; then
+    "no files were provided, exiting"
+    exit 1
+  else
+    case "$params" in
+    *cbz* | *cbr*)
+      unzip "$params" -d "temp"
+      cd "temp"
+      for folder in *; do
+        if [[ -d "$folder" ]]; then
+          cd "$folder"
+          mv * ../
+          cd ..
+          rm -r "$folder"
+        fi
+      done
+      for pics in *; do
+        case "$pics" in
+        *[jJ][pP][eE][gG]*) extension="jpeg" ;;
+        *[wW][eE][bB][pP]*) extension="webp" ;;
+        *[jJ][pP][gG]*) extension="jpg" ;;
+        *[pP][nN][gG]*) extension="png" ;;
+        *cbr* | *cbz*) echo continue ;;
+        *)
+          echo "$pics"
+          read -p "please enter the original images' extension: " extension
+          ;;
+        esac
+        newpics="$(echo "$pics" | rev | cut -d . -f 1 --complement | rev)"
+        width=$(file "${newpics}.$extension" | grep -oE [0-9]{4}x\?.*[0-9], | cut -d x -f 1 | rev | grep -oE [0-9]{4} | rev | head -n 1)
+        height=$(file "${newpics}.$extension" | grep -oE [0-9]{4}x\?.*[0-9], | rev | cut -d x -f 1 | sed -e 's/,//g' -e 's/ //g' | rev)
+        (($width < $height)) && convert "${newpics}.$extension" -filter catrom -resize 1200x -quality 25% "${newpics}.webp" \
+          || convert "${newpics}.$extension" -filter catrom -resize 55% -quality 30% "${newpics}.webp"
+      done
+      rm *.{png,jpg}
+      zip -9 -m "../${curdir}/${params}" *.webp
+      cd ..
+      rm -rf temp
+      ;;
+    *)
+      echo "the parameter you privded isn't a comic, aborting"
+      shift
+      ;;
+    esac
+  fi
+  shift
 done

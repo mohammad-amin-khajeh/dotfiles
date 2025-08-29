@@ -1,14 +1,15 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-if [[ $# -eq 1 ]]; then
+if [ $# -eq 1 ]; then
   selected=$1
 else
-  selected=$(find ~/Documents/code ~/Documents/konkour ~/Documents/code/* \
-    ~/Documents/code/*/projects ~/Documents/blog ~/Documents/code/frontend/tailwind \
-    -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected=$(find -L \
+    ~/Documents/code ~/Documents/code/* \
+    ~/.config ~/.local ~/.local/src ~/Documents ~/Documents/blog ~/Documents/code/*/projects \
+    -maxdepth 1 -type d | fzf)
 fi
 
-if [[ -z $selected ]]; then
+if [ -z "$selected" ]; then
   exit 0
 fi
 
