@@ -71,7 +71,7 @@ super + ctrl + s; w
 super + ctrl + s; o
   output_switcher.sh
 
-super + ctrl + s; b
+super + ctrl + s; b; b
   open_book.sh
 
 super + ctrl + s; y; v
@@ -126,4 +126,7 @@ super + ctrl + s; a; i
 
 super + ctrl + s; d
   wget -P ~/Downloads -c "$(xclip -o -sel c)"
+
+super + ctrl + s; b; m
+  bookmarks.sh
 ###########################################
