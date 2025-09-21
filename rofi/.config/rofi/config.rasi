@@ -4,4 +4,6 @@
 //@theme "/home/mmd/.config/rofi/themes/minimal.rasi"
 //@theme "/usr/share/rofi/themes/dmenu.rasi"
 //@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-@theme "/home/mmd/.config/rofi/themes/minimal.rasi"
+//@theme "/home/mmd/.config/rofi/themes/minimal.rasi"
+
+@theme "/home/mmd/.config/rofi/themes/sidebar.rasi"
