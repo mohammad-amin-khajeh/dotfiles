@@ -40,6 +40,7 @@ install_packages() {
     "bash-language-server"
     "lua-language-server"
     "neovim"
+    "prettier"
     "pyright"
     "ruff"
     "shellcheck-bin"
