@@ -81,10 +81,10 @@ super + ctrl + s; y; m
   yt-dlp.sh m "$(xclip -o -sel c)"
 
 super + ctrl + s; t; t
-  notify-send "study time:" "$(today_time.sh ~/Documents/coding_progress.norg)" -t 1000
+  notify-send "study time:" "$(today_time.sh ~/Documents/coding_progress.md)" -t 1000
 
 super + ctrl + s; c; p
-  "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
+  "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.md
 
 super + ctrl + s; c; c
   qalculate-gtk --title qalcFloat

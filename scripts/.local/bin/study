@@ -16,6 +16,6 @@ fi
 xset s off
 termdown -s -q "$study_time" -z
 "$term" -e calcurse
-"$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.norg
+"$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.md
 xset s on
 exec rest "$rest_time"
