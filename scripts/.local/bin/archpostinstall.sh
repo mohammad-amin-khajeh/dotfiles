@@ -94,7 +94,6 @@ install_packages() {
     "cuetools"
     "deno"
     "dunst"
-    "dunst"
     "easytag"
     "entr"
     "eza"
