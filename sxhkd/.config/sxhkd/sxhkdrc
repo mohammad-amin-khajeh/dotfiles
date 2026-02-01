@@ -13,6 +13,14 @@ KP_Subtract
 XF86MonBrightness{Down,Up}
   brightnessctl set {5-%, 5+%}
 
+# f4 on my laptop
+XF86AudioMicMute
+  timer.sh
+
+# f8 on my laptop
+XF86RFKill
+  timer.sh kill
+
 super + r
   rofi -show run
 
@@ -80,6 +88,7 @@ super + ctrl + s; y; v
 super + ctrl + s; y; m
   yt-dlp.sh m "$(xclip -o -sel c)"
 
+# [t]otal [t]ime
 super + ctrl + s; t; t
   notify-send "study time:" "$(today_time.sh ~/Documents/coding_progress.md)" -t 1000
 
@@ -129,4 +138,12 @@ super + ctrl + s; d
 
 super + ctrl + s; b; m
   bookmarks.sh
+
+# [t]imer [s]tart
+super + ctrl + s; t; s
+  timer.sh
+
+# [t]imer [e]nd
+super + ctrl + s; t; e
+  timer.sh kill
 ###########################################
