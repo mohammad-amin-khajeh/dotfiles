@@ -14,7 +14,7 @@ else
   wall="$1"
 fi
 xwallpaper --zoom "$wall"
-printf "%s" "$wall" >"$XDG_CACHE_HOME"/wallpaper
+printf "%s" "$wall" > "$XDG_CACHE_HOME"/wallpaper
 
 Xresources_font_conf="Xft.antialias: 1
 Xft.autohint: 0
@@ -24,7 +24,7 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 Xft.rgba: none"
 
-grep -q "$Xresources_font_conf" "$xresources_path" || printf '\n%s' "$Xresources_font_conf" >>"$xresources_path"
+grep -q "$Xresources_font_conf" "$xresources_path" || printf '\n%s' "$Xresources_font_conf" >> "$xresources_path"
 
 # wal -i "$wall"
 
