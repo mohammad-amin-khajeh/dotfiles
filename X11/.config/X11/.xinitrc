@@ -50,11 +50,11 @@ redshift -O 2000k &
 ########################################
 ######### ENABLE ONE OF THEM ###########
 
-# set a random wallpaper
-xwallpaper --zoom "$(find Pictures/wallpapers | shuf -n1)" &
+# # set a random wallpaper
+# xwallpaper --zoom "$(find Pictures/wallpapers | shuf -n1)" &
 
-# # set the last wallpaper
-# xargs --arg-file="$XDG_CACHE_HOME"/wallpaper -d $ xwallpaper --zoom &
+# set the last wallpaper
+xargs --arg-file="$XDG_CACHE_HOME"/wallpaper -d $ xwallpaper --zoom &
 
 ########################################
 
