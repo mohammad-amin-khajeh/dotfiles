@@ -52,7 +52,7 @@ super + shift + s; c
   shotgun -g $sel - | xclip -t 'image/png' -selection clipboard
 
 super + w
-    "$term" -c termFloat -e nmtui
+    "$term" -c termFloat -e wlctl
 
 # toggle screenkey
 super + alt + s

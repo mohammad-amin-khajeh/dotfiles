@@ -139,6 +139,7 @@ install_packages() {
     "ueberzugpp"
     "unzip"
     "wget"
+    "wlctl"
     "xdg-desktop-portal-termfilechooser-hunkyburrito-git"
     "zip"
     "zoxide"
