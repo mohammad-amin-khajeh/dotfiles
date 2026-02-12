@@ -70,8 +70,6 @@ super + ctrl + s; a; m
 super + ctrl + s; t; c
   toggle_tor.sh
 
-super + ctrl + s; r; w
-  reminder.sh
 
 super + ctrl + s; w
   wallpaper.sh
