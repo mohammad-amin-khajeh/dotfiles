@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "dedukun/relative-motions"
-rev = "9d26460"
-hash = "6c0568cfa966a5d4ac496c926975a613"
+rev = "a603d9e"
+hash = "e02a788e5b8ae0fb47fd0193dda589cc"
 
 [[plugin.deps]]
 use = "sonico98/exifaudio"
@@ -10,53 +10,43 @@ hash = "4761fffb60a12d37096c34a356380cdf"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mime-ext"
-rev = "7c174cc"
-hash = "4c49c446328c4553a4ccab7facc10b21"
+rev = "88990a6"
+hash = "8b177921e50732b2c8e9d71aa5956270"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "7c174cc"
+rev = "88990a6"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "1ee69a5"
-hash = "63679f3daf8551ff8755be38b5ced0f"
+rev = "594b8a2"
+hash = "c9e628fc0312d198db22ae2fa74883b"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "7c174cc"
-hash = "1adc12c2b2b025411ab61eb8f0879574"
+rev = "88990a6"
+hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "7c174cc"
-hash = "e01006bfb38951ea89031bd918b20dbb"
-
-[[plugin.deps]]
-use = "Lil-Dank/lazygit"
-rev = "7a08a09"
-hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
+rev = "88990a6"
+hash = "270915fa8282a19908449530ff66f7e2"
 
 [[plugin.deps]]
 use = "boydaihungst/restore"
-rev = "2c2802d"
-hash = "6513e9224b29ac1e2b3a7326ff648e81"
+rev = "4eda0bf"
+hash = "778941e7f1ebbacd60f4e254bb3c51de"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "7c174cc"
-hash = "b3f1d6ec3721d4061aad5f69cddb0cf9"
-
-[[plugin.deps]]
-use = "AnirudhG07/plugins-yazi:copy-file-contents"
-rev = "71545f4"
-hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
+rev = "88990a6"
+hash = "9ad20d763df07ce40fd09de549d914b0"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "1ab21d4"
-hash = "2143a53182dbbe935a1abd1623424aa5"
+rev = "88990a6"
+hash = "25aee698dd1081001008ce0cb1cc4da3"
 
 [flavor]
 deps = []

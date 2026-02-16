@@ -12,7 +12,7 @@ function Linemode:size_and_mtime()
 	return ui.Line(string.format("%s %s", size and ya.readable_size(size) or "-", time))
 end
 
-require("mime-ext"):setup({
+require("mime-ext.local"):setup({
 	-- Expand the existing filename database (lowercase), for example:
 	with_files = {
 		[".Xresources"] = "text/plain",
