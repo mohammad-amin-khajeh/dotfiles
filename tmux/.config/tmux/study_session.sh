@@ -13,7 +13,9 @@ fi
 
 tmux new-session -d -s "$sesh_name" -n timer "sh"
 
-tmux send-keys -t "$sesh_name":timer "study"
+# fix the prompt glitching problem
+sleep 0.1
+tmux send-keys -t "$sesh_name":timer "study "
 
 tmux select-window -t "$sesh_name":timer
 
