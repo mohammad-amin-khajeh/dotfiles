@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# study for 90 minutes then take a 5 minute break
+# study for 90 minutes then take a 10 minute break
 
 if [ "$1" != "" ]; then
   study_time="$(t2s "$1")"
@@ -11,6 +11,10 @@ if [ "$2" != "" ]; then
   rest_time="$(t2s "$2")"
 else
   rest_time="$(t2s 10m)"
+fi
+
+if [ -z "$term" ]; then
+  term="st"
 fi
 
 xset s off
