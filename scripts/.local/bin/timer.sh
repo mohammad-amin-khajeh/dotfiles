@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # === CONFIG ===
 TIMER_FILE="/tmp/rofi_countdown_pid"
