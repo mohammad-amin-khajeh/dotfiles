@@ -11,15 +11,15 @@ KP_Subtract
   playerctl --list-all | tail -n 1 | xargs playerctl play-pause --player
 
 XF86MonBrightness{Down,Up}
-  brightnessctl set {5-%, 5+%}
+  brightnessctl set {2-%, 2+%}
 
-# f4 on my laptop
-XF86AudioMicMute
-  timer.sh
+# # f4 on my laptop
+# XF86AudioMicMute
+#   timer.sh
 
-# f8 on my laptop
-XF86RFKill
-  timer.sh kill
+# # f8 on my laptop
+# XF86RFKill
+#   timer.sh kill
 
 super + r
   rofi -show run
@@ -29,8 +29,8 @@ super + v
 
 # snap the "whole" screen and copy it to clipboard
 super + shift + s; w
-  curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
-  file="${HOME}/Pictures/screenshots/${curdate}.png" && \
+  current_date=$(date +%Y-%m-%d\ %H-%M-%S) && \
+  file="${HOME}/Pictures/screenshots/${current_date}.png" && \
   shotgun "$file" && \
   echo "file://${file}" | \
   xclip -sel c -t text/uri-list && \
@@ -38,18 +38,18 @@ super + shift + s; w
 
 # screenshot a "region" and copy it to clipboard
 super + shift + s; r
-  curdate=$(date +%Y-%m-%d\ %H-%M-%S) && \
-  file="${HOME}/Pictures/screenshots/${curdate}.png" && \
-  sel=$(hacksaw) && \
-  shotgun -g "$sel" "$file" && \
+  current_date=$(date +%Y-%m-%d\ %H-%M-%S) && \
+  file="${HOME}/Pictures/screenshots/${current_date}.png" && \
+  region=$(hacksaw) && \
+  shotgun -g "$region" "$file" && \
   echo "file://${file}" | \
   xclip -sel c -t text/uri-list
 
 
 # "copy" a region to clipboard
 super + shift + s; c
-  sel=$(hacksaw) && \
-  shotgun -g $sel - | xclip -t 'image/png' -selection clipboard
+  region=$(hacksaw) && \
+  shotgun -g $region -f png - | xclip -t 'image/png' -selection clipboard
 
 super + w
     "$term" -c termFloat -e wlctl
