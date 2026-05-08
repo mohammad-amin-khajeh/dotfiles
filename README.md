@@ -5,10 +5,10 @@
 
 ## Programs and tools
 
-- window manager: [dwm](https://github.com/mohammad-amin-khajeh/dwm-fleixpatch)
+- window manager: [dwm](https://github.com/mohammad-amin-khajeh/dwm-flexipatch)
 - statusbar: [dwmblocks-async](https://github.com/mohammad-amin-khajeh/dwmblocks-async)
 - terminal emulator: [st](https://github.com/mohammad-amin-khajeh/st-flexipatch)
-- text editor: [neovim](https://github.com/mohammad-amin-khajeh/lazyvim)
+- text editor: [neovim](https://github.com/mohammad-amin-khajeh/nvim)
 - shell: [zsh](https://www.zsh.org)
 - hotkey daemon: [sxhkd](https://github.com/baskerville/sxhkd)
 - file manager: [yazi](https://github.com/sxyazi/yazi)
@@ -21,3 +21,4 @@
 - screenshot tool: [shotgun](https://github.com/neXromancers/shotgun), [hacksaw](https://github.com/neXromancers/hacksaw)
 - screen locker: [slock](https://tools.suckless.org/slock/)
 - music player: [cmus](https://github.com/cmus/cmus)
+- clipboard manager: [gpaste](https://github.com/Keruspe/GPaste) with [rofi-gpaste](https://github.com/yusufaktepe/rofi-gpaste)
