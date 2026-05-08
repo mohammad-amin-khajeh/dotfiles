@@ -18,14 +18,13 @@
 # If KEY has an uppercase equivalent, S-KEY is resolved into it. For instance,
 # K replaces S-k and Scedilla replaces S-scedilla, but S-Delete is sent as-is.
 
-case "$1" in
-"C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
-"C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
-"C-d")      while read file; do rm "$file"; done ;;
-"C-r")      while read file; do rawtherapee "$file" & done ;;
-"C-w")      while read file; do wallpaper.sh "$file"; done ;;
-"C-comma")  rotate 270 ;;
-"C-period") rotate  90 ;;
-"C-slash")  rotate 180 ;;
-esac
+while read -r file; do
 
+  case "$1" in
+  "C-c") xclip -sel clipboard -t image/jpeg -i "$file" ;;
+  "y") readlink -f "$file" | tr -d '\n' | xclip -selection clipboard ;;
+  "C-d") trash "$file" ;;
+  "C-r") rawtherapee "$file" ;;
+  "C-w") wallpaper.sh "$file" ;;
+  esac
+done
