@@ -1,20 +1,27 @@
 #!/usr/bin/env sh
 
-# set the wallpaper and run pywal on it at the same time
-# uncomment the lines below to make pywal themeing work
-# otherwise just leave it as is to only set the wallpaper
+# set the wallpaper and run pywal to get a matching colorscheme
+# uncomment the lines at the end to make pywal themeing work
+# otherwise just leave them as is to only set the wallpaper
 
-wallpath="${HOME}/Pictures/wallpapers"
+wallpaper_path="${HOME}/Pictures/wallpapers"
+
+if [ ! -d "$wallpaper_path" ]; then
+  echo "The wallpaper directory does not exist. Please specify a valid path in the script."
+  return 1
+fi
+
 xresources_path="${XDG_CONFIG_HOME:-$HOME/.config}/X11/.Xresources"
 
 if [ $# -eq 0 ]; then
-  cd "$wallpath" || exit
-  wall="$wallpath/$(fd -e png -e jpg -e jpeg | rofi -dmenu -i -p 'select wallpaper:')"
+  cd "$wallpaper_path" || exit
+  wallpaper="$wallpaper_path/$(fd -e png -e jpg -e jpeg | rofi -dmenu -i -p 'select wallpaper:')"
 else
-  wall="$1"
+  wallpaper="$1"
 fi
-xwallpaper --zoom "$wall"
-printf "%s" "$wall" > "$XDG_CACHE_HOME"/wallpaper
+
+xwallpaper --zoom "$wallpaper"
+printf "%s" "$wallpaper" > "$XDG_CACHE_HOME/wallpaper"
 
 Xresources_font_conf="Xft.antialias: 1
 Xft.autohint: 0
