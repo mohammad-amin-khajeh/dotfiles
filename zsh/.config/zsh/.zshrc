@@ -74,11 +74,12 @@ alias \
 
 #plugins and configurations
 zle_highlight+=('paste:none')
-zstyle ':completion:*:*:mpv:*'         file-sort modification
-zstyle ':completion:*:*:nsxiv-rifle:*' file-sort modification
-zstyle ':completion:*:*:n:*'           file-sort modification
-zstyle ':completion:*:*:rm:*'          file-sort modification
+zstyle ':completion:*:*:7z:*'          file-sort modification
 zstyle ':completion:*:*:cpf:*'         file-sort modification
+zstyle ':completion:*:*:mpv:*'         file-sort modification
+zstyle ':completion:*:*:n:*'           file-sort modification
+zstyle ':completion:*:*:nsxiv-rifle:*' file-sort modification
+zstyle ':completion:*:*:rm:*'          file-sort modification
 zstyle ':completion::complete:*' gain-privileges 1
 setopt autocd
 setopt sharehistory
