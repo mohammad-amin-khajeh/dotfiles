@@ -14,17 +14,13 @@ end
 
 require("mime-ext.local"):setup({
 	-- Expand the existing filename database (lowercase), for example:
-	with_files = {
-		[".Xresources"] = "text/plain",
-	},
+	with_files = {},
 
 	-- Expand the existing extension database (lowercase), for example:
 	with_exts = {
 		dng = "image/jpeg",
 		heif = "image/heif",
 		heic = "image/heic",
-		zst = "application/zstd",
-		ts = "video/mp4",
 	},
 
 	-- If the mime-type is not in both filename and extension databases,
