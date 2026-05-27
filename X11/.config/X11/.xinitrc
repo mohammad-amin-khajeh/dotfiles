@@ -74,6 +74,7 @@ xset s 180 180 &
 xinput set-prop 10 "libinput Accel Speed" 0.8 &
 xinput set-prop 9 "libinput Accel Speed" 0.8 &
 xinput set-prop 8 "libinput Accel Speed" 0.8 &
+xinput set-prop 6 "libinput Accel Speed" 0.8 &
 
 set -- "dunst" \
   "dwmblocks" \
