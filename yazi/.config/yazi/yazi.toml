@@ -17,12 +17,11 @@ scrolloff      = 5
 [preview]
 tab_size        = 2
 max_width       = 900
-max_height      = 900
+max_height      = 650
 cache_dir       = "~/.cache/yazi"
 image_delay     = 0
 image_filter    = "triangle"
 image_quality   = 75
-sixel_fraction  = 15
 ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
 

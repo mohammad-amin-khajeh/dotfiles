@@ -4,7 +4,8 @@
         "cx",
         "fs",
         "ps",
-        "Linemode"
+        "Linemode",
+        "ya"
     ],
     "workspace.checkThirdParty": "Disable"
 }
