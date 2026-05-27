@@ -11,7 +11,7 @@ KP_Subtract
   playerctl --list-all | tail -n 1 | xargs playerctl play-pause --player
 
 XF86MonBrightness{Down,Up}
-  brightnessctl set {2-%, 2+%}
+  brightnessctl set {1-%, 1+%}
 
 # f4 on my laptop
 XF86AudioMicMute
