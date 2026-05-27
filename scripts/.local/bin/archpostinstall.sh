@@ -47,6 +47,7 @@ install_packages() {
     "shfmt"
     "stylua"
     "tinymist"
+    "taplo"
   )
 
   local fonts=(
@@ -71,6 +72,8 @@ install_packages() {
     "libnotify"
     "mac"
     "zathura-pdf-mupdf"
+    "zathura-djvu"
+    "zathura-cb"
   )
 
   local shell=(
@@ -103,6 +106,7 @@ install_packages() {
     "fzf"
     "github-cli"
     "glow"
+    "gnome-epub-thumbnailer"
     "gparted"
     "gpaste"
     "hacksaw"
