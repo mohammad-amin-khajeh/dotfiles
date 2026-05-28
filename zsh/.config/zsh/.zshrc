@@ -51,7 +51,7 @@ alias \
   mpvfs='mpv --player-operation-mode=pseudo-gui' \
   mpyt='mpv --ytdl-format=302+140/298+140/22/302+140/398+140/244+140' \
   mv='mv -iv' \
-  n='nvim' \
+  n='TERM=tmux-256color nvim' \
   nfetch='fastfetch -c ~/.config/fastfetch/neofetch.jsonc' \
   open='xdg-open' \
   pac='sudo pacman' \
