@@ -22,10 +22,10 @@ is_book_extension() {
 }
 
 list_books() {
-  find -L "$book_dir" -maxdepth 2 -type f -printf '%T@ %P\n' \
-    | sort -nr \
-    | cut -d ' ' -f 2- \
-    | is_book_extension
+  find -L "$book_dir" -maxdepth 2 -type f -printf '%T@ %P\n' |
+    sort -nr |
+    cut -d ' ' -f 2- |
+    is_book_extension
 }
 
 books="$(list_books)"

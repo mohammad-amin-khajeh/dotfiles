@@ -32,22 +32,14 @@ install_packages() {
     "tor"
     "typst"
     "yazi"
+    "yt-dlp"
     "zathura"
     "zola"
   )
 
   local editor=(
-    "bash-language-server"
-    "lua-language-server"
     "neovim"
-    "prettier"
-    "pyright"
-    "ruff"
-    "shellcheck-bin"
-    "shfmt"
-    "stylua"
-    "tinymist"
-    "taplo"
+    "tree-sitter-cli"
   )
 
   local fonts=(
@@ -144,7 +136,7 @@ install_packages() {
     "ueberzugpp"
     "unzip"
     "wget"
-    "wlctl"
+    "wlctl-bin"
     "xdg-desktop-portal-termfilechooser-hunkyburrito-git"
     "zip"
     "zoxide"
@@ -202,19 +194,18 @@ install_yt_dlp_nightly() {
     return 0
   fi
 
-  version="$(curl https://github.com/yt-dlp/yt-dlp-nightly-builds/releases \
-    | rg -i -o nightly\ [0-9].*[0-9] \
-    | rev \
-    | cut -d' ' -f 1 \
-    | rev \
-    | cut -d \< -f 1 \
-    | head -n 1)"
+  version="$(curl https://github.com/yt-dlp/yt-dlp-nightly-builds/releases |
+    rg -i -o nightly\ [0-9].*[0-9] |
+    rev |
+    cut -d' ' -f 1 |
+    rev |
+    cut -d \< -f 1 |
+    head -n 1)"
 
-  echo "$pass" \
-    | sudo -S wget -P "$path" https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/"$version"/yt-dlp
+  echo "$pass" |
+    sudo -S wget -P "$path" https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/"$version"/yt-dlp
 
-  echo "$pass" \
-    | sudo -S chmod a+x "$path"/yt-dlp
+  echo "$pass" | sudo -S chmod a+x "$path"/yt-dlp
 
   echo "yt-dlp nightly downloaded."
 }
@@ -256,7 +247,7 @@ install_suckless_tools() {
   local git_urls=("dwm-flexipatch" "st-flexipatch" "dwmblocks-async" "nsxiv")
   local tools=("dwm" "st" "dwmblocks-async" "nsxiv")
 
-  for i in $(seq 0 4); do
+  for i in $(seq 0 3); do
     local current_tool="${tools[i]}"
     local current_url="${git_urls[i]}"
 
@@ -307,8 +298,6 @@ Depends = dash' | sudo tee /usr/share/libalpm/hooks/dash-symlink.hook
 install_yay
 install_packages
 download_anki
-install_yt_dlp_nightly
-yt_dlp_completions
 remove_motherboard_beep_sound && echo "removed motherboard beep sound."
 pulseaudio_modules && echo "set pulseaudio modules."
 decrease_swappiness && echo "decreased swappiness."
