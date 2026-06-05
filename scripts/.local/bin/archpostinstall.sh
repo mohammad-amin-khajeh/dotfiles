@@ -17,6 +17,7 @@ read -rp "enter your password: " pass
 
 install_packages() {
   local apps=(
+    "anki"
     "calcurse"
     "cmus"
     "fcitx5-im"
@@ -166,23 +167,6 @@ install_packages() {
   pipx insall scdl
 }
 
-download_anki() {
-  local path
-  local url
-  local file_name
-  path="$HOME/Downloads"
-  url="$(curl 'https://apps.ankiweb.net/' | grep -o 'https://\S*linux.*\.zst' | head -n1)"
-  file_name="${url##*/}"
-
-  if [ -f "$path/$file_name" ]; then
-    echo "anki is already donwloaded."
-    return 0
-  fi
-
-  wget -P "$path" "$url"
-  echo "donwloaded anki."
-}
-
 install_yt_dlp_nightly() {
   local version
   local path
@@ -297,7 +281,6 @@ Depends = dash' | sudo tee /usr/share/libalpm/hooks/dash-symlink.hook
 
 install_yay
 install_packages
-download_anki
 remove_motherboard_beep_sound && echo "removed motherboard beep sound."
 pulseaudio_modules && echo "set pulseaudio modules."
 decrease_swappiness && echo "decreased swappiness."
