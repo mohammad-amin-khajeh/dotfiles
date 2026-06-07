@@ -88,7 +88,6 @@ install_packages() {
     "brightnessctl"
     "btop"
     "cuetools"
-    "deno"
     "dunst"
     "easytag"
     "entr"
