@@ -49,7 +49,9 @@ super + shift + s; r
 # "copy" a region to clipboard
 super + shift + s; c
   region=$(hacksaw) && \
-  shotgun -g $region -f png - | xclip -t 'image/png' -selection clipboard
+  shotgun -g $region -f png /tmp/tmp.png && \
+  echo "file:///tmp/tmp.png" | \
+  xclip -sel c -t text/uri-list
 
 super + w
     "$term" -c termFloat -e wlctl
