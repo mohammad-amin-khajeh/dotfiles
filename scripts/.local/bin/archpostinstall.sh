@@ -20,8 +20,6 @@ install_packages() {
     "anki"
     "calcurse"
     "cmus"
-    "fcitx5-im"
-    "fcitx5-mozc"
     "firefox"
     "mpv"
     "pcmanfm-gtk3"
@@ -77,13 +75,11 @@ install_packages() {
 
   local theme=(
     "arc-gtk-theme"
-    "lxappearance-gtk3"
     "papirus-icon-theme"
   )
 
   local tools=(
     "7zip"
-    "aria2"
     "bat"
     "brightnessctl"
     "btop"
