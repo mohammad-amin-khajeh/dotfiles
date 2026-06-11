@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 # study for 90 minutes then take a 10 minute break
 
+stats_file="$HOME/Documents/coding_progress.md"
+
 if [ "$1" != "" ]; then
   study_time="$(t2s "$1")"
 else
@@ -20,6 +22,6 @@ fi
 xset s off
 termdown -s -q "$study_time" -z
 "$term" -e calcurse
-"$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.md
+"$term" -c termFloat -e "$EDITOR" "$stats_file"
 xset s on
 exec rest "$rest_time"
