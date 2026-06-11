@@ -27,17 +27,17 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = "${EDITOR:-vi} %s", desc = "$EDITOR", for = "unix", block = true },
+	{ run = "${EDITOR:-vi} %s",            desc = "$EDITOR",      for = "unix", block = true },
 	{ run = 'code "%*"',    orphan = true, desc = "code",         for = "windows" },
 	{ run = 'code -w "%*"', block = true,  desc = "code (block)", for = "windows" },
 ]
 
 open_image = [
-	{ run = "nsxiv-rifle %s",             desc = "Open", for = "linux" },
+	{ run = "nsxiv-rifle %s",              desc = "Open", for = "linux" },
 ]
 
 open_pdf = [
-	{ run = "zathura %s",                 desc = "Open", for = "linux" },
+	{ run = "zathura %s",                  desc = "Open", for = "linux" },
 ]
 
 reveal = [
@@ -57,24 +57,24 @@ prepend_rules = [
 [plugin]
 prepend_previewers = [
     { mime = 'audio/mpegurl', run = 'code' }, # ignore .m3u files
-    { mime = 'audio/*',   run = 'preview-audio' },
-    { url = "*.tar*",     run = 'piper --format=url -- tar tf "$1"'},
-    { url = "*.csv",      run = 'piper -- bat -p --color=always "$1"'},
-    { url = "*.md",       run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'},
-    { url = '*.epub',     run = 'preview-epub' },
-    { url = '*.cb{z,r}',  run = 'preview-cbz' },
-    { mime = "image/djvu", run  = "djvu-view" },
+    { mime = 'audio/*',       run = 'preview-audio' },
+    { url = "*.tar*",         run = 'piper --format=url -- tar tf "$1"'},
+    { url = "*.csv",          run = 'piper -- bat -p --color=always "$1"'},
+    { url = "*.md",           run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'},
+    { url = '*.epub',         run = 'preview-epub' },
+    { url = '*.cb{z,r}',      run = 'preview-cbz' },
+    { mime = "image/djvu",    run = "djvu-view" },
 
     # Fallback
     { mime = "application/octet-stream",    run = "code" },
 ]
 
 prepend_preloaders = [
-  { url = '*.epub',      run = 'preview-epub' },
-  { url = '*.cb{z,r}',   run = 'preview-cbz' },
-  { mime = "image/djvu", run  = "djvu-view" },
+  { url = '*.epub',         run = 'preview-epub' },
+  { url = '*.cb{z,r}',      run = 'preview-cbz' },
+  { mime = "image/djvu",    run = "djvu-view" },
   { mime = 'audio/mpegurl', run = 'code' }, # ignore .m3u files
-  { mime = 'audio/*',    run = 'preview-audio' },
+  { mime = 'audio/*',       run = 'preview-audio' },
 ]
 
 [[plugin.prepend_fetchers]]
