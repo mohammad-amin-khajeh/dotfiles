@@ -18,6 +18,7 @@ prepend_keymap = [
 	{ on = [ "g", "c", "v" ], run = "cd ~/Videos/code/",                  desc = "cd ~/Videos/code" },
 	{ on = [ "g", "d", "d" ], run = "cd ~/Downloads",                     desc = "cd ~/Downloads" },
 	{ on = [ "g", "d", "f" ], run = "cd ~/Documents",                     desc = "cd ~/Documents" },
+	{ on = [ "g", "d", "c" ], run = "cd ~/Documents/code",                desc = "cd ~/Documents" },
 	{ on = [ "g", "f"],       run = "cd ~/Documents/flash",               desc = "cd ~/Documents/flash" },
 	{ on = [ "g", "e"],       run = "cd ~/Documents/harddrive",           desc = "cd ~/Documents/harddrive" },
 	{ on = [ "g", "k"],       run = "cd ~/Documents/konkour",             desc = "cd ~/Documents/konkour" },
