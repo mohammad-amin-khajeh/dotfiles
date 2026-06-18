@@ -22,7 +22,11 @@ is_book_extension() {
 }
 
 list_books() {
-  find -L "$book_dir" -maxdepth 2 -type f -printf '%T@ %P\n' |
+  # HACK: you can change "%T@" to "%s" to sort based on filesize
+  # as opposed to modified date
+
+  sort_param="%T@"
+  find -L "$book_dir" -maxdepth 2 -type f -printf "$sort_param %P\n" |
     sort -nr |
     cut -d ' ' -f 2- |
     is_book_extension
