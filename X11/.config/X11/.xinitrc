@@ -44,6 +44,11 @@ if [ -d "$xinitdir"/xinitrc.d ]; then
   unset f
 fi
 
+# environmental variables
+export XDG_CURRENT_DESKTOP="dwm"
+export SXHKD_SHELL="/bin/sh"
+export term="${term:-st}"
+
 # redshift to make screen light easier on the eyes
 redshift -O 2000k &
 
@@ -84,14 +89,14 @@ set -- "dunst" \
   "xhidecursor"
 
 for program in "$@"; do
-  if ! pidof -sx "$program" > /dev/null && command -v "$program" > /dev/null; then
+  if ! pidof -sx "$program" >/dev/null && command -v "$program" >/dev/null; then
     "$program" &
   fi
 done
 
 (
   sleep 0.5
-  pidof -sx gpaste-daemon > /dev/null || gpaste-client daemon
+  pidof -sx gpaste-daemon >/dev/null || gpaste-client daemon
 ) &
 
 exec dwm
