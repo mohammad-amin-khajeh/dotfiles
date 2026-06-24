@@ -54,7 +54,7 @@ super + shift + s; c
   xclip -sel c -t text/uri-list
 
 super + w
-    "$term" -c termFloat -e wlctl
+  "$term" -c termFloat -e wlctl
 
 # toggle screenkey
 super + alt + s
@@ -82,11 +82,8 @@ super + ctrl + s; o
 super + ctrl + s; b; b
   open_book.sh
 
-super + ctrl + s; y; v
-  yt-dlp.sh v "$(xclip -o -sel c)"
-
-super + ctrl + s; y; m
-  yt-dlp.sh m "$(xclip -o -sel c)"
+super + ctrl + s; y; {v,m}
+  yt-dlp.sh {v,m} "$(xclip -o -sel c)"
 
 # [t]otal [t]ime
 super + ctrl + s; t; t
@@ -104,18 +101,20 @@ super + ctrl + s; c; o
 
 # Calcurse Todo
 super + ctrl + s; c; t
-  calcurse.sh
+  calcurse_todo.sh
 
 # Calcurse Appointments
 super + ctrl + s; c; a
-  notify-send "$(calcurse -d1)" -t 3000
+  notify-send "$(calcurse -d1)" -t 2000
 
 # show last dunst notification
+# [n]otification [s]how
 super + ctrl + s; n; s
   dunstctl history-pop
 
 # dismiss last dunst notification
-super + ctrl + s; u; n
+# [n]otification [h]ide
+super + ctrl + s; n; h
   dunstctl close-all
 
 # anki card
@@ -130,6 +129,7 @@ super + ctrl + s; a; c
 super + ctrl + s; a; i
   xdotool search --name "Add" windowactivate; sleep 0.1; xdotool key ctrl+shift+o
 
+# [d]ownload url
 super + ctrl + s; d
   wget -P ~/Downloads -c "$(xclip -o -sel c)"
 
@@ -147,4 +147,12 @@ super + ctrl + s; t; e
 # [r]ofi[m]oji
 super + ctrl + s; r; m
   rofimoji
+
+# [r]ofi [d]esktop
+super + ctrl + s; r; d
+  rofi -show drun
+
+# [r]un [b]top
+super + ctrl + s; r; b
+  "$term" -c termFloat -e btop
 ###########################################
