@@ -22,7 +22,7 @@ is_book_extension() {
 }
 
 list_books() {
-  # HACK: you can change "%T@" to "%s" to sort based on filesize
+  #HACK: you can change "%T@" to "%s" to sort based on filesize
   # as opposed to modified date
 
   sort_param="%T@"

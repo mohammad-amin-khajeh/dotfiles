@@ -4,7 +4,7 @@ default_dir=$HOME
 ; Uncomment to skip creating destination save files with instructions in them
 ; create_help_file=0
 ; Uncomment and edit the line below to change the terminal emulator command
-env=TERMCMD='st -T "termfilechooser"'
+env=TERMCMD='st -c "termfilechooser" -g 120x35'
 
 ; Mode must be one of 'suggested', 'default', or 'last'.
 open_mode=suggested
