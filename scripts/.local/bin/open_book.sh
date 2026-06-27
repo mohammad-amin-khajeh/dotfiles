@@ -1,14 +1,17 @@
 #!/usr/bin/env sh
 
-# gives you a list of books to choose from using rofi/dmenu
-# the books are sorted by modified date in descending order(newest first)
+# gives you a list of your books to choose from using rofi/dmenu
+# the first entry, called 'last', opens the last book you opened
+# run the script with no args
 
-pdf_reader="zathura"
+reader="zathura"
+reader_cmd="zathura"
 launcher="rofi -dmenu -i -p book: "
 book_dir="${HOME}/Documents/books"
+lastbook_path="${HOME}/.cache/lastbook"
 
-if [ -z "$(command -v $pdf_reader)" ]; then
-  printf "the pdf reader '%s' is not installed\nexiting\n" "$pdf_reader"
+if [ -z "$(command -v "$reader")" ]; then
+  printf "the pdf reader '%s' is not installed\nexiting\n" "$reader"
   exit 1
 fi
 
@@ -18,11 +21,11 @@ if [ ! -d "$book_dir" ]; then
 fi
 
 is_book_extension() {
-  grep -iE '\.(pdf|epub|djvu|cbz|cbr)$'
+  grep -iE '\.(pdf|epub|djvu|cbz|cbr|azw|mobi3)$'
 }
 
 list_books() {
-  #HACK: you can change "%T@" to "%s" to sort based on filesize
+  # HACK: you can change "%T@" to "%s" to sort based on filesize
   # as opposed to modified date
 
   sort_param="%T@"
@@ -32,6 +35,33 @@ list_books() {
     is_book_extension
 }
 
+open_book() {
+  chosen_book="$1"
+
+  if [ -f "$lastbook_path" ]; then
+    lastbook="$(cat "$lastbook_path")"
+  else
+    lastbook=""
+  fi
+
+  if [ "$chosen_book" = "last" ]; then
+
+    if [ -n "$lastbook" ]; then
+      "$reader_cmd" "$book_dir/$lastbook"
+    else
+      printf "No last book found\n"
+      exit 1
+    fi
+
+  else
+    echo "$chosen_book" >"$lastbook_path"
+    "$reader_cmd" "$book_dir/$chosen_book"
+  fi
+}
+
 books="$(list_books)"
+last="last
+"
+books="${last}${books}"
 book="$(echo "$books" | $launcher)"
-[ "$book" != "" ] && "$pdf_reader" "$book_dir/$book" &
+[ "$book" != "" ] && open_book "$book" &
