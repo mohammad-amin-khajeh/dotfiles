@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Excalidraw
+Comment=Sketch diagrams and whiteboards
+MimeType=application/vnd.excalidraw+json;x-scheme-handler/chromium;
+Exec=chromium --app=https://excalidraw.com --new-window
+Categories=Education;Utility;
+StartupWMClass=excalidraw.com

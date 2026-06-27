@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=chess.com
+Comment=Play chess online
+Icon=chess
+Exec=chromium --app=https://chess.com --new-window
+Categories=Game;BoardGame;Network;
+StartupWMClass=chess.com
