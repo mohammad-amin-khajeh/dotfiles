@@ -1,11 +1,10 @@
 /**
  * ROFI Color theme
- * User: Qball
- * Copyright: Dave Davenport
+ * User: Makk
  */
 
 configuration {
-  font: "jetbrainsmono nf 12";
+  font: "jetbrainsmono nf 13";
 }
 
 * {
