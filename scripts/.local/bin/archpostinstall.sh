@@ -21,6 +21,7 @@ install_packages() {
     "calcurse"
     "cmus"
     "firefox"
+    "keepassxc"
     "mpv"
     "pcmanfm-gtk3"
     "qalculate-gtk"
