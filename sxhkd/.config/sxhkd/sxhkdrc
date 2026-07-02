@@ -54,7 +54,7 @@ super + shift + s; c
   xclip -sel c -t text/uri-list
 
 super + w
-  "$term" -c termFloat -e wlctl
+  "$term" -g 120x34 -c termFloat -e wlctl
 
 # toggle screenkey
 super + alt + s
@@ -90,7 +90,7 @@ super + ctrl + s; t; t
   notify-send "study time:" "$(today_time.sh ~/Documents/coding_progress.md)" -t 1000
 
 super + ctrl + s; c; p
-  "$term" -c termFloat -e "$EDITOR" ~/Documents/coding_progress.md
+  "$term" -g 120x34 -c termFloat -e "$EDITOR" ~/Documents/coding_progress.md
 
 super + ctrl + s; c; c
   qalculate-gtk --title qalcFloat
@@ -154,5 +154,5 @@ super + ctrl + s; r; d
 
 # [r]un [b]top
 super + ctrl + s; r; b
-  "$term" -c termFloat -e btop
+  "$term" -g 120x34 -c termFloat -e btop
 ###########################################
