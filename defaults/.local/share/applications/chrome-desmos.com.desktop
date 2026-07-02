@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=desmos
+Comment=Draw graphs online
+Icon=calculator
+Exec=chromium --app=https://www.desmos.com/calculator --new-window
+Categories=Education;Science;Utility;
+StartupWMClass=desmos.com
