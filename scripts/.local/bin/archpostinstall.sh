@@ -261,6 +261,15 @@ symlink_sh_to_dash() {
   [ "$(command -v dash)" ] && echo "$pass" | sudo -S ln -sfT dash /usr/bin/sh
 }
 
+chromium_policies() {
+  echo '{
+  "ClearBrowsingDataOnExitList": [
+    "browsing_history",
+    "download_history"
+  ]
+}' | sudo tee /etc/chromium/policies/managed/policies.json
+}
+
 hook_for_dash_to_sh() {
   echo '[Trigger]
 Type = Package
@@ -285,4 +294,5 @@ install_suckless_tools
 set_grub_options
 configure_touchpad && echo "touchpad configured."
 symlink_sh_to_dash && echo "symlinked sh to dash."
-hook_for_dash_to_sh && echo "dash->sh hook added."
+hook_for_dash_to_sh && echo "sh->dash hook added."
+chromium_policies && echo "chromium policies set."
