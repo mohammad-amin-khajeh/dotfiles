@@ -92,8 +92,8 @@ super + ctrl + s; t; t
 super + ctrl + s; c; p
   "$term" -g 120x34 -c termFloat -e "$EDITOR" ~/Documents/coding_progress.md
 
-super + ctrl + s; c; c
-  qalculate-gtk --title qalcFloat
+# super + ctrl + s; c; c
+#   qalculate-gtk --title qalcFloat
 
 # Calcurse Open
 super + ctrl + s; c; o
@@ -119,6 +119,11 @@ super + ctrl + s; n; h
 
 # anki card
 super + ctrl + s; a; c
+  region=$(hacksaw) && \
+  shotgun -g $region -f png /tmp/tmp.png && \
+  magick /tmp/tmp.png /tmp/tmp.webp && \
+  echo "file:///tmp/tmp.webp" | \
+  xclip -sel c -t text/uri-list && \
   xdotool search --name "Add" windowactivate;\
   sleep 0.1;\
   xdotool key ctrl+v;\
